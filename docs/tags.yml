@@ -1,0 +1,23 @@
+ccpp:
+  label: 'C/C++'
+
+csharp:
+  label: 'C#'
+
+dotnet:
+  label: '.NET'
+
+python:
+  label: 'Python'
+
+network:
+  label: '网络'
+
+standard:
+  label: '规范'
+
+stack:
+  label: '技术栈（技术选型）'
+
+unfinished:
+  label: '未完成的文章'
