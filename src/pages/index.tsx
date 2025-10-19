@@ -25,14 +25,30 @@ export default function Home(): JSX.Element {
             justifyContent: 'center',
             textAlign: 'center',
           }}>
-            <div>
-              <img src="/img/avatar.webp" alt="My avatar" style={{
+            <div style={{
+              maxWidth: '90%',
+            }}>
+              <img src="https://cn.cravatar.com/avatar/1BBD3CEC186505445320A17922EC5D59?s=1000" alt="My avatar" style={{
                 width: '14rem',
                 border: '2px solid var(--ifm-color-emphasis-300)',
                 borderRadius: '7rem',
                 marginBottom: '1rem',
               }} />
-              <h2 style={{ fontWeight: 'normal' }}><strong>masterLazy</strong><span className={styles.separator}>/</span>mLazy<span className={styles.separator}>/</span>悠哉法师的赛博笔记本</h2>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                textAlign: 'center',
+              }}>
+                <h2 style={{
+                  fontWeight: 'normal',
+                }}>
+                  <strong>masterLazy
+                  </strong><span className={styles.separator}>/</span>
+                  mLazy
+                  <span className={styles.separator}>/</span>
+                  悠哉法师的赛博笔记本
+                </h2>
+              </div>
             </div>
           </div>
           <div className={styles.linkCardContainer}>
