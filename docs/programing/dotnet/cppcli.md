@@ -5,7 +5,7 @@ tags: [ccpp, csharp, dotnet]
 
 > C++/CLI 仅在 Windows 上受支持。
 
-C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的超集），它扩展了 C++ 以支持 .NET；同时还可用于 [C# 与 C/C++ 互操作](https://www.cnblogs.com/mLazy/p/19125840)。
+C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的超集），它扩展了 C++ 以支持 .NET；同时还可用于 [C# 与 C/C++ 互操作](csharp与ccpp互操作)。
 
 > 微软似乎不太建议新的项目使用 C++/CLI：
 >

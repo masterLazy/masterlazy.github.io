@@ -7,8 +7,7 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: 'masterLazy',
-    tagline: 'masterLazy',
+    title: 'mNotebook',
     favicon: 'img/favicon.ico',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -55,25 +54,31 @@ const config: Config = {
     ],
 
     themeConfig: {
-        // Replace with your project's social card
-        image: 'img/head.png',
         colorMode: {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: "mLazy's Notebooks",
+            title: "📚 mNotebook",
             items: [
                 {
-                    type: 'docSidebar',
-                    sidebarId: 'programingSidebar',
+                    to: '/docs/tags',
                     position: 'left',
-                    label: '程序设计 · Programing',
+                    label: '🏷️',
                 },
                 {
-                    type: 'docSidebar',
-                    sidebarId: 'oiSidebar',
+                    to: '/docs/category/速查',
                     position: 'left',
-                    label: '算法竞赛 · OI',
+                    label: '速查',
+                },
+                {
+                    to: '/docs/category/程序设计',
+                    position: 'left',
+                    label: '程序设计',
+                },
+                {
+                    to: '/docs/category/算法竞赛',
+                    position: 'left',
+                    label: '算法竞赛',
                 },
                 {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
@@ -90,11 +95,11 @@ const config: Config = {
                     items: [
                         {
                             label: '程序设计 | Programing',
-                            to: '/docs/programing',
+                            to: '/docs/category/程序设计',
                         },
                         {
                             label: '算法竞赛 | OI',
-                            to: '/docs/oi',
+                            to: '/docs/category/算法竞赛',
                         }
                     ],
                 },
@@ -115,7 +120,7 @@ const config: Config = {
                     title: 'Are you looking for…?',
                     items: [
                         {
-                            label: 'dsapps | 由 DeepSeek 编写的网页小程序',
+                            label: 'dsapps',
                             to: 'https://masterLazy.github.io/dsapps/',
                         },
                         {
@@ -131,6 +136,9 @@ const config: Config = {
             theme: prismThemes.github,
             darkTheme: prismThemes.oneDark,
             additionalLanguages: ['java', 'csharp'],
+        },
+        sidebar: {
+            autoCollapseCategories: true,
         },
     } satisfies Preset.ThemeConfig,
     stylesheets: [

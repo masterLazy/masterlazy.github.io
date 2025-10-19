@@ -1,5 +1,5 @@
 ---
-tags: [ccpp, stack]
+tags: [ccpp, stack, ramble]
 ---
 # C++ GUI 选型记
 

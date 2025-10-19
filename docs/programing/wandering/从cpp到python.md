@@ -1,5 +1,5 @@
 ---
-tags: [ccpp, python]
+tags: [python, ccpp]
 ---
 # 从 C++ 到 Python
 

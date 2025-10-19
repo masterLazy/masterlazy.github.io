@@ -3,21 +3,85 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.header {
+  background: var(--ifm-footer-background-color);
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.body {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.separator {
+  color: var(--ifm-color-emphasis-500);
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
+}
+
+.linkCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
-.buttons {
+.linkCard {
+  border-radius: 8px;
+  padding: 1.1rem;
+  transition: all 0.3s;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  margin: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.linkCard:hover {
+  background-color: var(--ifm-background-surface-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-primary);
+  color: inherit;
+}
+
+.notebookContainer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.notebookContainer h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.notebook {
+  padding: 1.1rem;
+  transition: all 0.3s;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 1rem;
+  border-right: 2rem solid var(--ifm-color-emphasis-300);
+  margin: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+}
+
+.notebook:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-primary);
+  border-right: 2rem solid var(--ifm-color-primary);
+  color: inherit;
 }
