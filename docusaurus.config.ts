@@ -7,7 +7,7 @@ import rehypeKatex from 'rehype-katex';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: 'mNotebook',
+    title: 'masterLazy',
     favicon: 'img/favicon.ico',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -133,7 +133,7 @@ const config: Config = {
             copyright: `© ${new Date().getFullYear()} masterLazy · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
         },
         prism: {
-            theme: prismThemes.github,
+            theme: prismThemes.oneLight,
             darkTheme: prismThemes.oneDark,
             additionalLanguages: ['java', 'csharp'],
         },
@@ -143,11 +143,8 @@ const config: Config = {
     } satisfies Preset.ThemeConfig,
     stylesheets: [
         {
-            href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+            href: '/katex/katex.min.css',
             type: 'text/css',
-            integrity:
-                'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-            crossorigin: 'anonymous',
         },
     ],
 };

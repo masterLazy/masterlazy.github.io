@@ -58,6 +58,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 95%;
 }
 
 .notebookContainer h2 {
@@ -75,7 +76,6 @@
   text-decoration: none;
   color: inherit;
   display: block;
-  width: 100%;
 }
 
 .notebook:hover {
