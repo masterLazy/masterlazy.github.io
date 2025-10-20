@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[704],{7732:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"\u9898\u89e3","slug":"/category/\u9898\u89e3-1","permalink":"/docs/category/\u9898\u89e3-1","sidebar":"oiSidebar","navigation":{"next":{"title":"P1044 \u6808","permalink":"/docs/oi/problem/P1044"}}}}')}}]);
