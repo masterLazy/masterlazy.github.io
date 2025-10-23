@@ -22,5 +22,11 @@ stack:
 ramble:
   label: ' 碎碎念 '
 
+math:
+  label: ' 数学 '
+
 unfinished:
-  label: ' 未完待续 '
+  label: '*未完待续'
+
+learn-what:
+  label: '*学到了什么'

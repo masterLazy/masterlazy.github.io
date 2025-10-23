@@ -43,11 +43,11 @@ $$
 
 分析：
 
-- $\text{ST}[i][j-1]\longrightarrow区间[i,i+2^{j-1}-1]$。
+- $\text{ST}[i][j-1]\longrightarrow$ 区间 $[i,i+2^{j-1}-1]$。
 
-- $\text{ST}[i+2^{j-1}][j-1]\longrightarrow区间[i+2^j-1,(i+2^{j-1})+2^{j-1}-1]\space即\space区间[i+2^j-1,i+2^j-1]$。
+- $\text{ST}[i+2^{j-1}][j-1]\longrightarrow$ 区间 $[i+2^j-1,(i+2^{j-1})+2^{j-1}-1]$ ，即 $[i+2^j-1,i+2^j-1]$。
 
-- 两个区间取并集，就是 $\text{ST}[i][j]\longrightarrow区间[i,i+2^j-1]$。
+- 两个区间取并集，就是 $\text{ST}[i][j]\longrightarrow$ 区间 $[i,i+2^j-1]$。
 
 这样，我们就可以由 $\text{ST}[...][j-1]$ 递推到 $\text{ST}[...][j]$。
 
