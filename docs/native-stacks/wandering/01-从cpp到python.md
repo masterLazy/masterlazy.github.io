@@ -223,7 +223,7 @@ for a in 'hello':
 > - stop: 计数到 stop 结束，**但不包括 stop**。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5
 > - step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)
 >
-> （摘自 [Python range() 函数用法](https://www.runoob.com/python/python-func-range.html)）
+> _摘自 [Python range() 函数用法](https://www.runoob.com/python/python-func-range.html)_
 
 ```python
 # sum.py

@@ -14,7 +14,7 @@ $$
 \fbox{ababc}\space abc\space\fbox{ababc}
 $$
 
-上图中框起来的就是 $S$ 的第一个 border。border不一定是极大的，比如：$\fbox{ab}\space abcabcabc\space\fbox{ab}$ 这也是一个 border。border 也可以是重叠的前后缀。
+上图中框起来的就是 $S$ 的第一个 border。border 不一定是极大的，比如：$\fbox{ab}\space abcabcabc\space\fbox{ab}$ 这也是一个 border。border 也可以是重叠的前后缀。
 
 我们可以得到 border 的两个小性质：
 

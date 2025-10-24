@@ -1,5 +1,6 @@
 {
-  "label": "网络技术",
+  "position": 4,
+  "label": "Web 技术栈",
   "link": {
     "type": "generated-index"
   }

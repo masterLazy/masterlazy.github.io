@@ -1,12 +1,14 @@
 ---
-tags: [ ]
+tags: [ learn-what ]
 ---
+
+import ColorDot from '@site/src/components/ColorDot';
 
 # P11233 染色
 
-| 难度      | 算法s | 日期         | 题目链接                                |
-| ------- | --- | ---------- | ----------------------------------- |
-| 提高+/省选− | DP  | 2025-10-23 | https://luogu.com.cn/problem/P11233 |
+| 难度                                    | 算法s | 日期       | 题目链接                            |
+| --------------------------------------- | ----- | ---------- | ----------------------------------- |
+| <ColorDot color='#3498db' />提高+/省选− | DP    | 2025-10-23 | https://luogu.com.cn/problem/P11233 |
 
 本文是对 [P11233 [CSP-S 2024] 染色 题解](https://www.luogu.com.cn/article/rzyvi1w6) 的详细解释。
 
@@ -63,7 +65,7 @@ if (k) { // 如果 A[i] 出现过
 当 $k=i-1$ 时，我们试着计算高亮下一行，`max()` 的第二个参数为 $dp[i]+A_i$。然而很不幸的是，此时 $dp[i]=0$，因为它没被设置过。但实际上我们想要的是 $dp[i-1]+A_i$。我参考的题解是这样写的：
 
 ```cpp
-dp[i] = dp[i-1], k = last[A[i]];
+dp[i] = dp[i - 1], k = last[A[i]];
 if (k) { // 如果 A[i] 出现过
     // highlight-next-line
     dp[i] = max(dp[i - 1], dp[k + 1] + A[i] + s[i] - s[k + 1]);
@@ -81,7 +83,6 @@ dp[i-1]+A_i & k=i-1,\\
 \max\{dp[i-1],dp[k+1]+A[i]+s_i-s_{k+1}\} & \text{otherwise}.\\
 \end{cases}
 $$
-
 
 <details>
 <summary>用时 1.16s 内存 12.84 MB</summary>

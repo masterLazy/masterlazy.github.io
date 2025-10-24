@@ -66,19 +66,22 @@ const config: Config = {
                     label: '🏷️',
                 },
                 {
-                    to: '/docs/category/速查',
+                    to: '/docs/quick/intro',
                     position: 'left',
                     label: '速查',
                 },
                 {
-                    to: '/docs/category/程序设计',
-                    position: 'left',
-                    label: '程序设计',
-                },
-                {
-                    to: '/docs/category/算法竞赛',
+                    to: '/docs/oi/intro',
                     position: 'left',
                     label: '算法竞赛',
+                },
+                {
+                    to: '/docs/native-stacks/intro',
+                    label: '原生技术栈',
+                },
+                {
+                    to: '/docs/web-stacks/intro',
+                    label: 'Web 技术栈',
                 },
                 {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
@@ -90,19 +93,6 @@ const config: Config = {
         footer: {
             style: 'light',
             links: [
-                {
-                    title: 'Notebooks',
-                    items: [
-                        {
-                            label: '程序设计 | Programing',
-                            to: '/docs/category/程序设计',
-                        },
-                        {
-                            label: '算法竞赛 | OI',
-                            to: '/docs/category/算法竞赛',
-                        }
-                    ],
-                },
                 {
                     title: 'My Accounts',
                     items: [

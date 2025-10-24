@@ -1,0 +1,102 @@
+---
+tags: [  ]
+---
+
+import ColorDot from '@site/src/components/ColorDot';
+
+# P1001 A+B Problem
+
+题解模板。
+
+````markdown
+---
+tags: [  ]
+---
+
+import ColorDot from '@site/src/components/ColorDot';
+
+# [Title]
+
+| 难度                             | 算法s | 日期 | 题目链接                           |
+| -------------------------------- | ----- | ---- | ---------------------------------- |
+|  |       |      | https://luogu.com.cn/problem/ |
+
+## 题意简述
+
+## 思路
+
+## 编码
+
+<details>
+<summary>用时 内存 </summary>
+```cpp showLineNumbers
+
+```
+</details>
+````
+| 难度                                      | MDX                                         |
+| ----------------------------------------- | ------------------------------------------- |
+| <ColorDot color='#bfbfbf' />暂无评定      | `<ColorDot color='#bfbfbf' />暂无评定`      |
+| <ColorDot color='#fe4c61' />入门          | `<ColorDot color='#fe4c61' />入门`          |
+| <ColorDot color='#f39c11' />普及−         | `<ColorDot color='#f39c11' />普及−`         |
+| <ColorDot color='#ffc116' />普及/提高−    | `<ColorDot color='#ffc116' />普及/提高−`    |
+| <ColorDot color='#52c41a' />普及+/提高    | `<ColorDot color='#52c41a' />普及+/提高`    |
+| <ColorDot color='#9d3dcf' />省选/NOI−     | `<ColorDot color='#9d3dcf' />省选/NOI−`     |
+| <ColorDot color='#0e1d69' />NOI/NOI+/CTSC | `<ColorDot color='#0e1d69' />NOI/NOI+/CTSC` |
+
+```markdown
+$$
+dp[i]=
+\begin{cases}
+dp[i-1] & k=0, \\
+dp[i-1]+A_i & k=i-1,\\
+\max\{dp[i-1],dp[k+1]+A[i]+s_i-s_{k+1}\} & \text{otherwise}.\\
+\end{cases}
+$$
+```
+
+$$
+dp[i]=
+\begin{cases}
+dp[i-1] & k=0, \\
+dp[i-1]+A_i & k=i-1,\\
+\max\{dp[i-1],dp[k+1]+A[i]+s_i-s_{k+1}\} & \text{otherwise}.\\
+\end{cases}
+$$
+
+---
+
+| 难度                             | 算法s | 日期       | 题目链接                           |
+| -------------------------------- | ----- | ---------- | ---------------------------------- |
+| <ColorDot color='#fe4c61' />入门 | 无    | 2025-10-25 | https://luogu.com.cn/problem/P1001 |
+
+最简单的题。
+
+## 题意简述
+
+给两个数字 $a,b$，输出 $a+b$。
+
+范围：$-10^9\le a,b\le10^9$。
+
+## 思路
+
+这么简单的题，还有啥思路。。。
+
+## 编码
+
+<details>
+<summary>用时 41 ms 内存 1.04 MB</summary>
+```cpp showLineNumbers
+/*
+* P1001 A+B Problem
+*/
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << a + b;
+    return 0;
+}
+```
+</details>
