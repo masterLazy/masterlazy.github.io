@@ -14,7 +14,7 @@ export default function Home(): JSX.Element {
         <div className={styles.header}>
           <img src="https://cn.cravatar.com/avatar/1BBD3CEC186505445320A17922EC5D59?s=1000"
             alt="My avatar" className={styles.avatar} />
-          <Link to={useBaseUrl('/docs/jot/mnotebook')} style={{ textDecoration: 'none', }} >
+          <Link to={useBaseUrl('/docs/jot/mnotebook')} style={{ textDecoration: 'none' }} >
             <h2>
               <strong>masterLazy
               </strong><span className={styles.separator}>/</span>

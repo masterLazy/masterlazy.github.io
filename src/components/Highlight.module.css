@@ -1,0 +1,11 @@
+.content {
+    display: inline;
+    padding: 2px 5px;
+    background-color: #ffeb3b;
+    border-radius: 3px;
+    box-decoration-break: clone;
+}
+
+[data-theme='dark'] .content {
+    background-color: #615913;
+}

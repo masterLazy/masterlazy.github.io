@@ -1,6 +1,14 @@
 import React from 'react';
 
-const ColorDot = ({ color = '#007bff', size = '1rem', className = '' }) => {
+interface ColorDot {
+    color: string;
+    size: string;
+    className?: string;
+}
+
+export default function ColorDot({
+    color = 'var(--ifm-color-primary)', size = '1rem', className
+}: ColorDot) {
     const dotStyle = {
         width: size,
         height: size,
@@ -15,5 +23,3 @@ const ColorDot = ({ color = '#007bff', size = '1rem', className = '' }) => {
 
     return <span style={dotStyle} className={className} />;
 };
-
-export default ColorDot;

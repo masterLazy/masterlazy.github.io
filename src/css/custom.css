@@ -67,7 +67,12 @@ code:not([class]) {
     filter: brightness(0.89) invert(1) hue-rotate(180deg);
 }
 
+/* 选项卡 */
 li[role='tab'] {
     transition: all 0.2s;
     border-radius: 0;
+}
+
+.markdown>h2 {
+    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
 }

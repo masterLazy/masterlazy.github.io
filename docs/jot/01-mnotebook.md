@@ -30,6 +30,21 @@ tags: [ ramble ]
 
 效果：<img src="/img/favicon.ico" className='invertable-img' style={{width:'128px'}} />
 
+### `@site/src/components/Highlight`
+
+类似荧光笔的高光效果，已适配深色模式。
+
+```tsx
+import Highlight from '@site/src/components/Highlight';
+
+<Highlight>注意：</Highlight>这个组件不要在<Highlight>单行</Highlight>内使用，否则可能会出现<Highlight>排版异常</Highlight>！
+<Highlight>$\sum_{i=1}^ni=(1+n)\times n/2$</Highlight>
+```
+
+import Highlight from '@site/src/components/Highlight';
+
+效果：<Highlight>注意：</Highlight>这个组件不要在<Highlight>单行</Highlight>内使用，否则可能会出现<Highlight>排版异常</Highlight>！
+
 ### `@site/src/components/ColorDot`
 
 一个带有颜色的小圆点，用于颜色编码。

@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from './ProblemInfoCard.module.css';
+import Link from '@docusaurus/Link';
 
+import styles from './ProblemInfoCard.module.css';
 import ColorDot from '@site/src/components/ColorDot';
 
 interface ProblemInfoCard {
@@ -34,21 +35,22 @@ export default function ProblemInfoCard({
         'black': 'NOI/NOI+/CTSC'
     };
     return (
-        <div className={styles.card} onClick={() => window.open(link, '_blank')}
-            title='点击跳转到 OJ 查看本题'>
-            <div className={styles.line}>
-                <span className={styles.title}>难度</span>
-                <ColorDot color={difficultyColors[difficulty]} />
-                <span>{difficultyNames[difficulty]}</span>
+        <Link to={link} title='点击跳转到 OJ 查看本题' style={{ textDecoration: 'none' }}>
+            <div className={styles.card}>
+                <div className={styles.line}>
+                    <span className={styles.title}>难度</span>
+                    <ColorDot color={difficultyColors[difficulty]} />
+                    <span>{difficultyNames[difficulty]}</span>
+                </div>
+                <div className={styles.line}>
+                    <span className={styles.title}>算法</span>
+                    <span>{algorithms.join('、')}</span>
+                </div>
+                <div className={styles.line}>
+                    <span className={styles.title}>日期</span>
+                    <span>{date}</span>
+                </div>
             </div>
-            <div className={styles.line}>
-                <span className={styles.title}>算法</span>
-                <span>{algorithms.join('、')}</span>
-            </div>
-            <div className={styles.line}>
-                <span className={styles.title}>日期</span>
-                <span>{date}</span>
-            </div>
-        </div>
+        </Link>
     );
 }

@@ -6,11 +6,6 @@ tags: [csharp, standard]
 
 简单记录一下 C# 的代码规范。（不断更新…）
 
-### 参考
-
-- [.NET 编码约定 - C# | Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-- [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
-
 ## 例子
 
 ```csharp
@@ -42,3 +37,8 @@ public class MagicClass { // 魔法类
 - 单行注释：空格 + `//` + 空格 + 具体内容
 - 属性声明和方法声明之间留空行
 - 尽量用公有属性而不是字段（`const` 或 `readonly` 除外）
+
+## 参考
+
+- [.NET 编码约定 - C# | Microsoft Learn](https://learn.microsoft.com/zh-cn/dotnet/csharp/fundamentals/coding-style/coding-conventions)
+- [C# Coding Style](https://github.com/dotnet/runtime/blob/main/docs/coding-guidelines/coding-style.md)
