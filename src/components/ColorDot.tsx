@@ -10,7 +10,7 @@ const ColorDot = ({ color = '#007bff', size = '1rem', className = '' }) => {
         verticalAlign: 'middle',
         flexShrink: 0,
         marginRight: '0.5rem',
-        marginBottom: '0.1rem'
+        marginBottom: '0.2rem'
     };
 
     return <span style={dotStyle} className={className} />;

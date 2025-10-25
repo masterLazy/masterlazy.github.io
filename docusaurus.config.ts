@@ -66,9 +66,9 @@ const config: Config = {
                     label: '🏷️',
                 },
                 {
-                    to: '/docs/quick/intro',
+                    to: '/docs/jot/intro',
                     position: 'left',
-                    label: '速查',
+                    label: '随笔',
                 },
                 {
                     to: '/docs/oi/intro',
@@ -94,7 +94,7 @@ const config: Config = {
             style: 'light',
             links: [
                 {
-                    title: 'My Accounts',
+                    title: '我的账号',
                     items: [
                         {
                             label: 'GitHub',
@@ -107,7 +107,7 @@ const config: Config = {
                     ],
                 },
                 {
-                    title: 'Are you looking for…?',
+                    title: '你是否在找',
                     items: [
                         {
                             label: 'dsapps',

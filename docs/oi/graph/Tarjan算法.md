@@ -27,7 +27,7 @@ Tarjan 算法可以在 $\approx O(n+m)$ 的时间复杂度下，**离线地**处
 
 原理分析：
 
-<center><img src="/img/oi/tree-2.webp"/></center>
+<center><img src='/img/oi/tree-2.webp' className='invertable-img'/></center>
 
 请看上面的树（编号就是 DFS 序），假设我们现在遍历到了 $2$，当我们完成子树的遍历时，开始处理查询：
 

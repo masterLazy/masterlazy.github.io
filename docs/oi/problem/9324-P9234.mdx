@@ -1,16 +1,19 @@
 # P9234 买瓜
 
-import ColorDot from '@site/src/components/ColorDot';
-
-| 难度                                   | 算法s          | 日期       | 题目链接                           |
-| -------------------------------------- | -------------- | ---------- | ---------------------------------- |
-| <ColorDot color='#52c41a' />普及+/提高 | 折半搜索、剪枝 | 2025-07-20 | https://luogu.com.cn/problem/P9234 |
-
 :::warning
 
 我觉得此题没有参考价值。
 
 :::
+
+import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
+
+<ProblemInfoCard
+  difficulty='green'
+  algorithms={['DFS','折半搜索','剪枝']}
+  date='2025-07-20'
+  link="https://luogu.com.cn/problem/P9234"
+/>
 
 本题解聚焦于剪枝优化上。如果只是简单地使用折半搜索，很容易 TLE。我感觉这道题的难度在于怎么调优（而不是想到折半搜索）。
 

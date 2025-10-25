@@ -6,6 +6,8 @@ import ColorDot from '@site/src/components/ColorDot';
 
 # P1001 A+B Problem
 
+
+
 题解模板。
 
 ````markdown
@@ -15,11 +17,18 @@ tags: [  ]
 
 import ColorDot from '@site/src/components/ColorDot';
 
-# [Title]
+# [标题]
 
-| 难度                             | 算法s | 日期 | 题目链接                           |
-| -------------------------------- | ----- | ---- | ---------------------------------- |
-|  |       |      | https://luogu.com.cn/problem/ |
+[描述]
+
+import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
+
+<ProblemInfoCard
+  difficulty=''
+  algorithms={['']}
+  date=''
+  link='https://luogu.com.cn/problem/'
+/>
 
 ## 题意简述
 
@@ -34,15 +43,13 @@ import ColorDot from '@site/src/components/ColorDot';
 ```
 </details>
 ````
-| 难度                                      | MDX                                         |
-| ----------------------------------------- | ------------------------------------------- |
-| <ColorDot color='#bfbfbf' />暂无评定      | `<ColorDot color='#bfbfbf' />暂无评定`      |
-| <ColorDot color='#fe4c61' />入门          | `<ColorDot color='#fe4c61' />入门`          |
-| <ColorDot color='#f39c11' />普及−         | `<ColorDot color='#f39c11' />普及−`         |
-| <ColorDot color='#ffc116' />普及/提高−    | `<ColorDot color='#ffc116' />普及/提高−`    |
-| <ColorDot color='#52c41a' />普及+/提高    | `<ColorDot color='#52c41a' />普及+/提高`    |
-| <ColorDot color='#9d3dcf' />省选/NOI−     | `<ColorDot color='#9d3dcf' />省选/NOI−`     |
-| <ColorDot color='#0e1d69' />NOI/NOI+/CTSC | `<ColorDot color='#0e1d69' />NOI/NOI+/CTSC` |
+`<ProblemInfoCard />` 的 `difficulty` 可以是以下值：
+
+```html
+gray, red, orange, yellow, green, blue, purple, black
+```
+
+---
 
 ```markdown
 $$
@@ -66,11 +73,16 @@ $$
 
 ---
 
-| 难度                             | 算法s | 日期       | 题目链接                           |
-| -------------------------------- | ----- | ---------- | ---------------------------------- |
-| <ColorDot color='#fe4c61' />入门 | 无    | 2025-10-25 | https://luogu.com.cn/problem/P1001 |
-
 最简单的题。
+
+import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
+
+<ProblemInfoCard
+  difficulty='red'
+  algorithms={['模拟']}
+  date='2025-10-25'
+  link="https://luogu.com.cn/problem/P1001"
+/>
 
 ## 题意简述
 
