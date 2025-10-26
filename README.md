@@ -1,41 +1,21 @@
-# Website
+# 📚 mNotebook
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+我的的赛博笔记本。所有笔记以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可。
 
-## Installation
+## 安装依赖
 
 ```bash
 yarn
 ```
 
-## Local Development
+## 本地开发
 
 ```bash
 yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
+## 构建
 
 ```bash
 yarn build
 ```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

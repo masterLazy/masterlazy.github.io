@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ColorDot {
     color: string;
-    size: string;
+    size?: string;
     className?: string;
 }
 

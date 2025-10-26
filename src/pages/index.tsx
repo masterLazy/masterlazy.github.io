@@ -68,7 +68,7 @@ export default function Home(): JSX.Element {
             <p>
               如无特殊说明，本站中的内容采用 <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>
               （署名—非商业性使用—相同方式共享 4.0 协议国际版）公开许可。
-              这些笔记中的一些也在 Cnblog、Bilibilli、Luogu 发布，我把它们全都搬到这里了。
+              这些笔记中的一些也在 Cnblog、Bilibilli、Luogu 发布，我把它们搬到这里了。
             </p>
             <p>
               如果你的电脑上安装了思源宋体或者其他你喜欢的无衬线体，将获得更好的浏览体验（相比微软雅黑而言）。

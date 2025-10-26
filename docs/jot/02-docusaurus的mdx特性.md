@@ -28,14 +28,14 @@ function HelloCodeTitle(props) {
 ## 告示
 
 ```markdown
-:::note[Your Title **with** some _Markdown_ `syntax`!]
+:::info[Your Title **with** some _Markdown_ `syntax`!]
 
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 :::
 ```
 
-:::note[Your Title **with** some _Markdown_ `syntax`!]
+:::info[Your Title **with** some _Markdown_ `syntax`!]
 
 Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 

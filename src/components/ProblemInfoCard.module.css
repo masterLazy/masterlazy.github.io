@@ -17,6 +17,7 @@
 
 .card:hover {
     border: 1px solid var(--ifm-color-primary);
+    color: var(--ifm-color-emphasis-800);
 }
 
 .line {
