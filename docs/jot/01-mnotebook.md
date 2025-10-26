@@ -25,12 +25,12 @@ tags: [ ramble ]
 应用此 class 的 `<img>` 会在暗色模式下反转亮度，例如：
 
 ```tsx
-<img src="/img/favicon.ico" className='invertable-img' style={{width:'128px'}} />
+<img src='/img/favicon.ico' className='invertable-img' style={{width:'128px'}} />
 ```
 
 效果：
 
->  <img src="/img/favicon.ico" className='invertable-img' style={{width:'128px'}} />
+>  <img src='/img/favicon.ico' className='invertable-img' style={{width:'128px'}} />
 
 ### `@site/src/components/Highlight`
 
