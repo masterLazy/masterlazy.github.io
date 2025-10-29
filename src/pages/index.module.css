@@ -13,13 +13,21 @@
   text-align: center;
 }
 
-.header h2 {
+.headerContainer {
+  max-width: 95%;
+
+  @media (min-width: 61rem) {
+    max-width: 61rem;
+  }
+}
+
+.headerContainer h2 {
   font-weight: normal;
   color: var(--ifm-font-color-base);
   transition: color 0.2s;
 }
 
-.header h2:hover {
+.headerContainer h2:hover {
   color: var(--ifm-color-primary);
 }
 
@@ -43,10 +51,14 @@
 }
 
 .avatar {
-  width: 14rem;
+  width: 7rem;
   border: 2px solid var(--ifm-color-emphasis-300);
   border-radius: 50%;
   margin-bottom: 1rem;
+
+  @media (min-width: 997px) {
+    width: 14rem;
+  }
 }
 
 .linkCardContainer {

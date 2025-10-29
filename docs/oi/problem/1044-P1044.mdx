@@ -19,7 +19,7 @@ import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
 
 写的很直白了。。。几乎没有理解难度吧。。。
 
-## DP 状态设计
+## 思路 #1：DP 状态设计
 
 二维 DP 做法，$dp[x][y]$ 表示：
 
@@ -33,7 +33,7 @@ import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
 
 上图：“出入栈操作，状态转移过程”
 
-## 然后呢？怎么算?
+## 思路 #2：然后呢？怎么算?
 
 初始时，我们有一个状态 $dp[n][0]$，也就是有 $n$ 次入栈机会，但是从未执行过入栈操作。
 
@@ -61,7 +61,7 @@ $X$ 的路径数 $=$ $X$ 所有子状态的路径数之和
 
 用这个公式从 $Q$ 往回推，直到 $P$ 就好了。
 
-## 好，接下来DP。
+## 思路 #3：好，接下来DP
 
 决定了，$dp[x][y]$ 就表示：还有 $x$ 个元素要入栈，$y$ 个元素要出栈，此时通向末状态可能的路径数。
 

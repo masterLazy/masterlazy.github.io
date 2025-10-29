@@ -15,7 +15,7 @@
  */
 .content {
     display: inline;
-    padding: 2px 5px;
+    padding: 2px;
     background-color: #ffeb3b;
     border-radius: 3px;
     box-decoration-break: clone;

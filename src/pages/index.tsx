@@ -12,26 +12,28 @@ export default function Home(): JSX.Element {
     <Layout description='Description will go into a meta tag in <head />'>
       <main>
         <div className={styles.header}>
-          <img src="https://cn.cravatar.com/avatar/1BBD3CEC186505445320A17922EC5D59?s=1000"
-            alt="My avatar" className={styles.avatar} />
-          <Link to={useBaseUrl('/docs/jot/mnotebook')} style={{ textDecoration: 'none' }} >
-            <h2>
-              <strong>masterLazy
-              </strong><span className={styles.separator}>/</span>
-              mLazy
-              <span className={styles.separator}>/</span>
-              悠哉法师的赛博笔记本
-            </h2>
-          </Link>
-          <div className={styles.linkCardContainer}>
-            <Link to={useBaseUrl('/docs/category/随笔')}
-              className={styles.linkCard}>
-              📝 所有笔记
+          <div className={styles.headerContainer}>
+            <img src="https://cn.cravatar.com/avatar/1BBD3CEC186505445320A17922EC5D59?s=1000"
+              alt="My avatar" className={styles.avatar} />
+            <Link to={useBaseUrl('/docs/jot/mnotebook')} style={{ textDecoration: 'none' }} >
+              <h2>
+                <strong>masterLazy
+                </strong><span className={styles.separator}>/</span>
+                mLazy
+                <span className={styles.separator}>/</span>
+                悠哉法师的赛博笔记本
+              </h2>
             </Link>
-            <Link to={useBaseUrl('/docs/tags')}
-              className={styles.linkCard}>
-              🏷️ 所有标签
-            </Link>
+            <div className={styles.linkCardContainer}>
+              <Link to={useBaseUrl('/docs/category/随笔')}
+                className={styles.linkCard}>
+                📝 所有笔记
+              </Link>
+              <Link to={useBaseUrl('/docs/tags')}
+                className={styles.linkCard}>
+                🏷️ 所有标签
+              </Link>
+            </div>
           </div>
         </div>
         <div className={styles.body}>
