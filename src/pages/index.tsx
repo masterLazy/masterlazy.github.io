@@ -6,8 +6,7 @@ import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
-export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+export default function Home() {
   return (
     <Layout description='Description will go into a meta tag in <head />'>
       <main>
@@ -49,7 +48,8 @@ export default function Home(): JSX.Element {
                 📝 随笔<span className={styles.separator}>|</span>Jottings
               </Link>
             </div>
-            <Heading as='h2' id="计算机科学" style={{ fontWeight: 'normal' }}>
+
+            <Heading as='h2' id='computer-science' style={{ fontWeight: 'normal' }}>
               <strong>计算机科学</strong><span className={styles.separator}>|</span>Computer Science
             </Heading>
             <div className={styles.notebookContainer}>
@@ -64,6 +64,16 @@ export default function Home(): JSX.Element {
               <Link to={useBaseUrl('/docs/web-stacks/intro')}
                 className={styles.notebook}>
                 📝 Web 技术栈<span className={styles.separator}>|</span>Web Stacks
+              </Link>
+            </div>
+
+            <Heading as='h2' id='academic-subjects' style={{ fontWeight: 'normal' }}>
+              <strong>文化课</strong><span className={styles.separator}>|</span>Academic Subjects
+            </Heading>
+            <div className={styles.notebookContainer}>
+              <Link to={useBaseUrl('/docs/math/intro')}
+                className={styles.notebook}>
+                📝 数学<span className={styles.separator}>|</span>Math
               </Link>
             </div>
             <hr />

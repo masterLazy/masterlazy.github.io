@@ -43,18 +43,6 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 总共有 `note`、`tip`、`info`、`warning`、`danger`。告示可以嵌套。
 
-## 文档卡片
-
-使用前需要引入 React 组件。
-
-```jsx
-import DocCardList from '@theme/DocCardList';
-
-<DocCardList />
-```
-
-这个语法会显示同侧边栏内的所有项目。效果请见 [前言](intro)，这里就不放了。
-
 ## 更好看的 `<details>`
 
 ````markdown

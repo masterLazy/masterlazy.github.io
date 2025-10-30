@@ -14,8 +14,6 @@
 }
 
 .headerContainer {
-  max-width: 95%;
-
   @media (min-width: 61rem) {
     max-width: 61rem;
   }
@@ -24,7 +22,7 @@
 .headerContainer h2 {
   font-weight: normal;
   color: var(--ifm-font-color-base);
-  transition: color 0.2s;
+  transition: color 0.3s;
 }
 
 .headerContainer h2:hover {
@@ -57,7 +55,7 @@
   margin-bottom: 1rem;
 
   @media (min-width: 997px) {
-    width: 14rem;
+    width: 13rem;
   }
 }
 

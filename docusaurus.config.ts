@@ -62,27 +62,43 @@ const config: Config = {
             items: [
                 {
                     to: '/docs/tags',
-                    position: 'left',
                     label: '🏷️',
                 },
                 {
                     to: '/docs/jot/intro',
-                    position: 'left',
                     label: '随笔',
                 },
+                //
                 {
-                    to: '/docs/oi/intro',
-                    position: 'left',
-                    label: '算法竞赛',
+                    type: 'dropdown',
+                    label: '计算机科学',
+                    items: [
+                        {
+                            to: '/docs/oi/intro',
+                            label: '算法竞赛',
+                        },
+                        {
+                            to: '/docs/native-stacks/intro',
+                            label: '原生技术栈',
+                        },
+                        {
+                            to: '/docs/web-stacks/intro',
+                            label: 'Web 技术栈',
+                        },
+                    ],
                 },
+                //
                 {
-                    to: '/docs/native-stacks/intro',
-                    label: '原生技术栈',
+                    type: 'dropdown',
+                    label: '文化课',
+                    items: [
+                        {
+                            to: '/docs/math/intro',
+                            label: '数学',
+                        }
+                    ],
                 },
-                {
-                    to: '/docs/web-stacks/intro',
-                    label: 'Web 技术栈',
-                },
+                //
                 {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
                     label: 'GitHub',

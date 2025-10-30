@@ -62,6 +62,8 @@ code:not([class]) {
 
 /* 暗色模式下自动翻转颜色的图片 */
 .invertable-img {
+    max-width: 50%;
+    object-fit: contain;
     filter: none;
 }
 
@@ -75,8 +77,12 @@ li[role='tab'] {
     border-radius: 0;
 }
 
-/* h2 标题 */
+/* Markdown */
 .markdown>h2 {
+    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
+}
+
+.markdown>hr {
     border-bottom: var(--ifm-color-emphasis-300) solid 1px;
 }
 
