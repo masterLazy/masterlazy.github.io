@@ -110,6 +110,19 @@ const config: Config = {
             style: 'light',
             links: [
                 {
+                    title: 'mNotebook',
+                    items: [
+                        {
+                            label: '所有笔记',
+                            to: '/docs/category/随笔',
+                        },
+                        {
+                            label: '标签列表',
+                            to: '/docs/tags',
+                        }
+                    ],
+                },
+                {
                     title: '我的账号',
                     items: [
                         {

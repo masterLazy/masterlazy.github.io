@@ -30,7 +30,7 @@ export default function Home() {
               </Link>
               <Link to={useBaseUrl('/docs/tags')}
                 className={styles.linkCard}>
-                🏷️ 所有标签
+                🏷️ 标签列表
               </Link>
             </div>
           </div>

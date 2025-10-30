@@ -60,22 +60,6 @@ code:not([class]) {
     padding-right: 5px;
 }
 
-/* 暗色模式下自动翻转颜色的图片 */
-.invertable-img {
-    filter: none;
-}
-
-/* 侧边图片 */
-.side-img {
-    max-width: 50%;
-    object-fit: contain;
-    margin-left: auto;
-}
-
-[data-theme='dark'] .invertable-img {
-    filter: brightness(0.89) invert(1) hue-rotate(180deg);
-}
-
 /* 选项卡 */
 li[role='tab'] {
     transition: all 0.2s;
@@ -84,14 +68,36 @@ li[role='tab'] {
 
 /* Markdown */
 .markdown>h2 {
-    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
-}
-
-.markdown>hr {
-    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
+    border-bottom: var(--ifm-color-emphasis-500) solid 1px;
 }
 
 /* docs/tags */
 a[rel='tag'] span {
     color: var(--ifm-font-color-base);
+}
+
+/*
+* 自定义的 class
+*/
+
+/* 暗色模式下自动翻转颜色的图片 */
+.invertable-img {
+    filter: none;
+}
+
+[data-theme='dark'] .invertable-img {
+    filter: brightness(0.89) invert(1) hue-rotate(180deg);
+}
+
+/* 图片组 */
+.img-group {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.img-group img {
+    border: var(--ifm-color-emphasis-300) solid 1px;
+    margin: 0 0.1rem;
+    object-fit: contain;
 }
