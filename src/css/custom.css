@@ -62,9 +62,14 @@ code:not([class]) {
 
 /* 暗色模式下自动翻转颜色的图片 */
 .invertable-img {
+    filter: none;
+}
+
+/* 侧边图片 */
+.side-img {
     max-width: 50%;
     object-fit: contain;
-    filter: none;
+    margin-left: auto;
 }
 
 [data-theme='dark'] .invertable-img {
