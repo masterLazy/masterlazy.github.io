@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkm_notebook=globalThis.webpackChunkm_notebook||[]).push([[8401],{2938:(s,a,e)=>{e.d(a,{A:()=>n});e(6540);var o=e(4164),t=e(3551);const r={details:"details_r1OI",isBrowser:"isBrowser_CCsw"};var l=e(4848);const i="alert alert--info";function n({...s}){return(0,l.jsx)(t.B,{...s,className:(0,o.A)(i,r.details,s.className)})}}}]);
