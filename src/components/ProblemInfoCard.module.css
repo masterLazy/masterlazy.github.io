@@ -13,6 +13,18 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
+
+:root {
+    --luogu-gray: #bfbfbf;
+    --luogu-red: #fe4c61;
+    --luogu-orange: #f39c11;
+    --luogu-yellow: #ffc116;
+    --luogu-green: #52c41a;
+    --luogu-blue: #3498db;
+    --luogu-purple: #9d3dcf;
+    --luogu-black: #0e1d69;
+}
+
 .card {
     background: var(--ifm-color-emphasis-100);
     border: 1px solid var(--ifm-color-emphasis-300);

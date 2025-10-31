@@ -92,12 +92,17 @@ a[rel='tag'] span {
 /* 图片组 */
 .img-group {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin: 0.5rem 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .img-group img {
     border: var(--ifm-color-emphasis-300) solid 1px;
-    margin: 0 0.1rem;
+    border-radius: 8px;
     object-fit: contain;
+    max-height: 23rem;
 }

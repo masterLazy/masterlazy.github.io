@@ -29,16 +29,6 @@ interface ProblemInfoCard {
 export default function ProblemInfoCard({
     link, difficulty, algorithms, date
 }: ProblemInfoCard) {
-    const difficultyColors = {
-        'gray': '#bfbfbf',
-        'red': '#fe4c61',
-        'orange': '#f39c11',
-        'yellow': '#ffc116',
-        'green': '#52c41a',
-        'blue': '#3498db',
-        'purple': '#9d3dcf',
-        'black': '#0e1d69'
-    };
     const difficultyNames = {
         'gray': '暂无评定',
         'red': '入门',
@@ -54,7 +44,7 @@ export default function ProblemInfoCard({
             <div className={styles.card}>
                 <div className={styles.line}>
                     <span className={styles.title}>难度</span>
-                    <ColorDot color={difficultyColors[difficulty]} />
+                    <ColorDot color={`var(--luogu-${difficulty})`} />
                     <span>{difficultyNames[difficulty]}</span>
                 </div>
                 <div className={styles.line}>

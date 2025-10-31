@@ -15,7 +15,6 @@
  */
 import React from 'react';
 import Link from '@docusaurus/Link';
-import MDXContent from '@theme/MDXContent';
 
 import styles from './CompInfoCard.module.css';
 

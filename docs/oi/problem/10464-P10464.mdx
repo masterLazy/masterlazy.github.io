@@ -1,0 +1,116 @@
+---
+tags: [  ]
+---
+
+import ColorDot from '@site/src/components/ColorDot';
+
+# P10464 Task
+
+贪心题，感觉模型挺经典的。
+
+import ProblemInfoCard from '@site/src/components/ProblemInfoCard';
+
+<ProblemInfoCard
+  difficulty='yellow'
+  algorithms={['贪心']}
+  date='2025-10-31'
+  link='https://luogu.com.cn/problem/P10464'
+/>
+
+## 题意简述
+
+有 $m$ 个任务，每个任务有耗时 $x_i$，难度 $y_i$。
+
+有 $n$ 台机器，每台机器有最大时间 $x_i$，最大难度 $y_i$。一台机器只能处理耗时不大于其最大时间，难度不大于最大难度的任务。
+
+一天之内，一台机器只能处理一个任务。每完成一个任务，得分为 $500x_i+2y_i$。求：一天之内最多完成的任务数、最大得分。
+
+范围：$1\le n,m\le10^5,\space1\le x_i\le1440,\space1\le y_i\le100.$
+
+## 思路
+
+我们发现，即使 $y_i$ 取最大值 $100$，其贡献的得分也仅有 $2\times100=200$；而 $x_i$ 即使取最小值，其贡献的得分也有 $500\times1=500$。显然，$x_i$ 的贡献**总是**大于 $y_i$。
+
+所以我们便可以以 $x_i$ 为第一关键字**降序**，$y_i$ 为第二关键字**降序**对任务排序。这样，可以保证先做前面的任务得分一定更大（贪心策略）。
+
+那我们怎么分配机器呢？我们不妨也把机器按 $x_i$ 从大到小排序，然后从前向后遍历，寻找合适的机器。随着遍历，我们处理的任务，其耗时单调不增，机器的最大时间也单调不增，所以这样的分配方式不会造成 “浪费”（即最大时间大的机器处理耗时小的任务）。$x_i$ 相同时，我们优先选择 $y_i$ 小的机器。因为我们不知道之后会不会出现 $y_i$ 更大的任务。*感性理解，这样肯定是更优的。*
+
+总结一下，我们这样做：
+
+- 排序任务：以 $x_i$ 为第一关键字**降序**，$y_i$ 为第二关键字**降序**。按顺序枚举任务。
+- 排序机器：以 $x_i$ 为第一关键字**降序**，$y_i$ 为第二关键字**升序**。使用第一个有能力处理此任务的机器。
+
+---
+
+看一眼数据范围，如果枚举每个任务时，需要枚举所有机器，那么算法是 $O(n^2)$ 的，会 TLE。如何优化？
+
+注意到 $y_i$ 的值域很小，所以不妨用一个 $100$ 个桶存储机器：`machine[101][MAXM]`（`101` 是因为直接把 $y_i$ 当下标的话，最大下标是 `100`），`machine[y]` 就存储最大难度为 `y` 的机器。
+
+> 我不太懂这样做的时间复杂度如何分析，洛谷题解区有人说是 $O(100m)=O(m)$。
+
+## 编码
+
+注意一下可能的最大得分为 $(500\times1440+2\times100)\times10^5=7.202\times10^{10}$，需要开 `long long`。
+
+<details>
+<summary>用时 297ms 内存 79.81 MB</summary>
+```cpp showLineNumbers
+/*
+* P10464 Task
+*/
+#include <bits/stdc++.h>
+using namespace std;
+const int MAXM = 1e5, MAXN = 1e5;
+// x=耗时, y=难度
+struct Task {
+    int x, y;
+    bool operator<(const Task& another) {
+        if (x != another.x) return x > another.x;
+        return y > another.y;
+    }
+} task[MAXM];
+struct Machine {
+    int x, y;
+    bool operator<(const Machine& another) {
+        if (x != another.x) return x > another.x;
+        return y < another.y;
+    }
+} machine[101][MAXN];
+bool isUsed[101][MAXN];
+int machineCnt[101];
+
+int main() {
+    int n, m, x, y;
+    cin >> n >> m;
+    for (int i = 0; i < n; i++) {
+        cin >> x >> y;
+        machine[y][machineCnt[y]].x = x;
+        machine[y][machineCnt[y]++].y = y;
+    }
+    for (int i = 0; i < m; i++) cin >> task[i].x >> task[i].y;
+    sort(task, task + m);
+    for (int i = 1; i <= 100; i++) {
+        sort(machine[i], machine[i] + machineCnt[i]);
+    }
+    unsigned long long cnt = 0, benefit = 0;
+    bool isCompleted;
+    for (int i = 0; i < m; i++) { // Task
+        isCompleted = false;
+        for (int j = task[i].y; j <= 100; j++) { // Bucket
+            for (int k = 0; k < machineCnt[j]; k++) { // Machine
+                if (isUsed[j][k]) continue;
+                if (machine[j][k].x >= task[i].x && machine[j][k].y >= task[i].y) {
+                    cnt++, benefit += task[i].x * 500 + task[i].y * 2;
+                    isUsed[j][k] = true;
+                    isCompleted = true;
+                    break;
+                }
+            }
+            if (isCompleted) break;
+        }
+    }
+    cout << cnt << ' ' << benefit << '\n';
+    return 0;
+}
+```
+</details>

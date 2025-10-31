@@ -30,7 +30,30 @@ tags: [ ramble ]
 
 效果：
 
->  <img src='/img/favicon.ico' className='invertable-img' style={{width:'128px'}} />
+ <img src='/img/favicon.ico' className='invertable-img' style={{width:'128px'}} />
+
+### `.img-group`
+
+推荐用此方式插入图片，例如：
+
+```tsx
+<div className='img-group'>
+    <div>
+        <img className='invertable-img' src='/img/oi/tree-1.webp' />
+        $\text{Fig. 1}$
+    </div>
+</div>
+```
+
+效果：
+<div className='img-group'>
+    <div>
+        <img className='invertable-img' src='/img/oi/tree-1.webp' />
+        $\text{Fig. 1}$
+    </div>
+</div>
+
+这样插入的图片：带有边框；容器使用 Flex-warp，被压缩时自动换行；设置了最大高度 `max-height`；设置了文字居中。
 
 ### `@site/src/components/Highlight`
 
@@ -48,9 +71,9 @@ import Highlight from '@site/src/components/Highlight';
 
 效果：
 
->  <Highlight>注意：</Highlight>这个组件不要在<Highlight>单行</Highlight>内使用，否则可能会出现<Highlight>排版异常</Highlight>！
->
->  还可以标记行内公式：<Highlight>$\sum_{i=1}^ni=\cfrac{(1+n)n}{2}.$</Highlight>
+<Highlight>注意：</Highlight>这个组件不要在<Highlight>单行</Highlight>内使用，否则可能会出现<Highlight>排版异常</Highlight>！
+
+还可以标记行内公式：<Highlight>$\sum_{i=1}^ni=\cfrac{(1+n)n}{2}.$</Highlight>
 
 ### `@site/src/components/ColorDot`
 
@@ -66,4 +89,4 @@ import ColorDot from '@site/src/components/ColorDot';
 
 效果：
 
->  <ColorDot color='var(--ifm-color-primary-darkest)' /> <ColorDot color='var(--ifm-color-primary-darker)' /> <ColorDot color='var(--ifm-color-primary-dark)' /> <ColorDot color='var(--ifm-color-primary)' /> <ColorDot color='var(--ifm-color-primary-light)' /> <ColorDot color='var(--ifm-color-primary-lighter)' />  <ColorDot color='var(--ifm-color-primary-lightest)' />
+<ColorDot color='var(--ifm-color-primary-darkest)' /> <ColorDot color='var(--ifm-color-primary-darker)' /> <ColorDot color='var(--ifm-color-primary-dark)' /> <ColorDot color='var(--ifm-color-primary)' /> <ColorDot color='var(--ifm-color-primary-light)' /> <ColorDot color='var(--ifm-color-primary-lighter)' />  <ColorDot color='var(--ifm-color-primary-lightest)' />

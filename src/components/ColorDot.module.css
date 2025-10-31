@@ -13,21 +13,15 @@
    See the License for the specific language governing permissions and
    limitations under the License.
  */
-import React from 'react';
-
-import styles from './ColorDot.module.css';
-
-interface ColorDot {
-    color: string;
-    size?: string;
+.colorDot {
+    width: var(--mlazy-colordot-size);
+    height: var(--mlazy-colordot-size);
+    background-color: var(--mlazy-colordot-color);
+    box-shadow: color-mix(in srgb, var(--mlazy-colordot-color), transparent) 0 1px 2px 0;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    margin-bottom: 0.2rem;
 }
-
-export default function ColorDot({
-    color = 'var(--ifm-color-primary)', size = '1rem'
-}: ColorDot) {
-    const dotStyle = {
-        '--mlazy-colordot-size': size,
-        '--mlazy-colordot-color': color,
-    } as React.CSSProperties;
-    return <span style={dotStyle} className={styles.colorDot} />;
-};
