@@ -71,7 +71,7 @@
 }
 
 .linkCard {
-  border-radius: 8px;
+  border-radius: var(--ifm-global-radius);
   padding: 1rem;
   transition: all 0.3s;
   border: 1px solid var(--ifm-color-emphasis-300);
@@ -114,7 +114,7 @@
   background: linear-gradient(135deg, rgba(0, 0, 0, 0), var(--ifm-color-emphasis-100));
   padding: 1.2rem;
   border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 8px;
+  border-radius: var(--ifm-global-radius);
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
   text-decoration: none;

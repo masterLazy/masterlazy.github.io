@@ -13,5 +13,5 @@
 
 .details[open]:not(.isBrowser),
 .details[data-collapsed='false'].isBrowser {
-  border-color: var(--ifm-color-emphasis-800);
+  border-color: var(--ifm-color-emphasis-500);
 }

@@ -1,6 +1,6 @@
-# Docusaurus 的 MD(X) 特性
+# Docusaurus 的 MDX 特性
 
-Docusaurus 中特别的 Markdown 语法，按照笔者的使用频率排序。
+MDX = Markdown with JDX。本文介绍 Docusaurus 中特别的 MDX 语法，按照笔者的使用频率排序。
 
 这里的很多内容都摘自 [Docusaurus 介绍 | Docusaurus](https://docusaurus.io/zh-CN/docs)。
 
@@ -44,6 +44,8 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 总共有 `note`、`tip`、`info`、`warning`、`danger`。告示可以嵌套。
 
 ## 更好看的 `<details>`
+
+笔者 swizzle 了这个组件，减小其视觉冲击。
 
 ````markdown
 <details>

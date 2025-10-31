@@ -25,7 +25,10 @@ C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的�
 
 配置完后，你应该会在 Visual Studio 的 “新建项目” 发现这些多出来的项目：
 
-![](https://i.ibb.co/vtFqRCj/2025-10-04-210037.jpg)
+<div className='group'>
+    <Img src='https://i.ibb.co/vtFqRCj/2025-10-04-210037.jpg' invertable maxHeight='100%'>
+    </Img>
+</div>
 
 “CLR” 指的是 Common Language Runtime（公共语言运行时）。总之就是我们想要的 C++/CLI。
 
