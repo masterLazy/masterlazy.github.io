@@ -1,5 +1,5 @@
 .details {
-  --docusaurus-details-decoration-color: var(--ifm-color-emphasis-800);
+  --docusaurus-details-decoration-color: var(--ifm-color-emphasis-500);
   --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
   margin: 0 0 var(--ifm-spacing-vertical);
   border: 1px solid var(--ifm-color-emphasis-300);

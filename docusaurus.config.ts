@@ -58,7 +58,13 @@ const config: Config = {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: "📚 mNotebook",
+            logo: {
+                alt: 'Site Logo',
+                src: '/img/favicon.webp',
+                href: '/',
+                target: '_self',
+            },
+            title: 'mNotebook',
             items: [
                 {
                     to: '/docs/tags',

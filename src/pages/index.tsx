@@ -18,8 +18,6 @@ export default function Home() {
               <h2>
                 <strong>masterLazy
                 </strong><span className={styles.separator}>/</span>
-                mLazy
-                <span className={styles.separator}>/</span>
                 悠哉法师的赛博笔记本
               </h2>
             </Link>
