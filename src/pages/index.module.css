@@ -14,6 +14,8 @@
 }
 
 .headerContainer {
+  max-width: 95%;
+
   @media (min-width: 61rem) {
     max-width: 61rem;
   }

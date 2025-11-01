@@ -14,7 +14,7 @@
    limitations under the License.
  */
 
-:root {
+.card {
     --luogu-gray: #bfbfbf;
     --luogu-red: #fe4c61;
     --luogu-orange: #f39c11;

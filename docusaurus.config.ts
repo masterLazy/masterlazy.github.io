@@ -61,14 +61,13 @@ const config: Config = {
             logo: {
                 alt: 'Site Logo',
                 src: '/img/favicon.webp',
-                href: '/',
                 target: '_self',
             },
             title: 'mNotebook',
             items: [
                 {
                     to: '/docs/tags',
-                    label: '🏷️',
+                    className: 'header-link header-tags-link',
                 },
                 {
                     to: '/docs/jot/intro',
@@ -107,8 +106,8 @@ const config: Config = {
                 //
                 {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
-                    label: 'GitHub',
                     position: 'right',
+                    className: 'header-link header-github-link',
                 },
             ],
         },

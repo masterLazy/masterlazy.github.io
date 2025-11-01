@@ -26,7 +26,8 @@ C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的�
 配置完后，你应该会在 Visual Studio 的 “新建项目” 发现这些多出来的项目：
 
 <div className='group'>
-    <Img src='https://i.ibb.co/vtFqRCj/2025-10-04-210037.jpg' invertable maxHeight='100%'>
+    <Img src='/img/native-stacks/cpp-cli-proj.webp' invertable maxHeight='100%'>
+	C++/CLI 项目
     </Img>
 </div>
 

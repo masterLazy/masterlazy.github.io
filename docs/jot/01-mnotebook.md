@@ -2,7 +2,7 @@
 tags: [ ramble ]
 ---
 
-# 关于 mNotebook
+# ⭐ 关于 mNotebook
 
 > 名字来源：**m**asterLazy's **Notebook**。
 
@@ -14,7 +14,7 @@ tags: [ ramble ]
 
 笔者之前一直用 Typora 打笔记，存在本地，问题就是要在不同设备上看笔记有点麻烦。而且 Typora 更多是编辑内容，没有一些高级的组织功能。Docusaurus 的文档组织功能就很强大，而且它还支持自定义 React 组件，可玩性很高。
 
-总之，这就是一份 “最精致” 的笔记了。毕竟笔记肯定是要常看的，做得精致一点才有想看的欲望。mNotebook 中笔者 “塞了很多小细节”，一些笔者认为可以提升（主要是笔者自己）阅读体验的东西，见下面。
+总之，这就是一份 “最精致” 的笔记了。毕竟笔记肯定是要常看的，做得精致一点才有想看的欲望。mNotebook 中笔者 “塞了很多小细节”——一些笔者认为可以提升（主要是笔者自己）阅读体验的东西，见下面。
 
 ## 增强功能
 
@@ -73,8 +73,8 @@ tags: [ ramble ]
 <ColorDot color='var(--ifm-color-primary-dark)' />
 <ColorDot color='var(--ifm-color-primary)' />
 <ColorDot color='var(--ifm-color-primary-light)' />
-<ColorDot color='var(--ifm-color-primary-lighter)' />
-<ColorDot color='var(--ifm-color-primary-lightest)' size='1.5rem' />
+<ColorDot color='var(--ifm-color-primary-lighter)' size='1.5rem' />
+<ColorDot color='var(--ifm-color-primary-lightest)' />
 ```
 
 效果：
@@ -83,8 +83,8 @@ tags: [ ramble ]
 <ColorDot color='var(--ifm-color-primary-dark)' />
 <ColorDot color='var(--ifm-color-primary)' />
 <ColorDot color='var(--ifm-color-primary-light)' />
-<ColorDot color='var(--ifm-color-primary-lighter)' />
-<ColorDot color='var(--ifm-color-primary-lightest)' size='1.5rem' />
+<ColorDot color='var(--ifm-color-primary-lighter)' size='1.5rem' />
+<ColorDot color='var(--ifm-color-primary-lightest)' />
 
 ---
 
