@@ -24,7 +24,7 @@ tags: [ ramble ]
 
 推荐用此 class 修饰 `<div>`，使之成为一个 “卡片组”，可以自动根据显示宽度排布子项目（从左往右排，空间不足则换行）。一个典型的应用是排版图片。
 
-```markdown
+```jsx
 <div className='group'>
     <div className='card'>1</div>
     <div className='card card-big' >2</div>
@@ -67,7 +67,7 @@ tags: [ ramble ]
 
 一个带有颜色的小圆点，用于颜色编码。默认的大小是 `1rem`，其带有轻微的阴影。
 
-```markdown
+```jsx
 <ColorDot color='var(--ifm-color-primary-darkest)' />
 <ColorDot color='var(--ifm-color-primary-darker)' />
 <ColorDot color='var(--ifm-color-primary-dark)' />
@@ -101,36 +101,42 @@ tags: [ ramble ]
 
 ### `<Img>`
 
-**强烈推荐**的图片插入方式。除了可以指定常规 `<img>` 的 `src`、`alt`，还可以：
+**强烈推荐**的图片插入方式。`<img>` 的第一个子元素将作为**图片**，第二个子元素将作为**图片注释**。（两个子元素之间需要空一行）
+
 - 添加属性 `invertable`，以在深色模式下反转图片颜色。
 - 在其子元素中指定图片的描述，此描述将居中显示于图片下方。
-- 指定 `maxHeight`，默认是 `23rem`。
+- 指定 `height`（其实是最大高度），默认是 `23rem`。
 
 另外，这样插入的图片还将拥有边框。
 
-```markdown title='快速复制'
+```jsx title='快速复制'
 <div className='group'>
-    <Img src='' invertable>
+    <Img invertable>
+    ![](./assets/)
     </Img>
 </div>
 ```
 
-```markdown
+实际使用中，图片一般放在 `./assets` 下（向上面那样）。下面的例子使用了静态资源。
+
+```jsx
 <div className='group'>
-    <Img src='/img/math/quadratic-curves.webp' invertable>
-    $\text{Fig. 1: Quadratic curves}$
-    </Img>
-    <Img src='/img/math/ellipse-1.webp' invertable>
-    $\text{Fig. 2: Ellipse}$
+    <Img>
+    ![](/img/favicon.webp)
+
+    这是**图片注释**\
+    注释里面可以自由使用 $\text{Markdown}$ 语法\
+    文字是左对齐的，这别有韵味。
     </Img>
 </div>
 ```
 效果：
 <div className='group'>
-    <Img src='/img/math/quadratic-curves.webp' invertable>
-    $\text{Fig. 1: Quadratic curves}$
-    </Img>
-    <Img src='/img/math/ellipse-1.webp' invertable>
-    $\text{Fig. 2: Ellipse}$
+    <Img>
+    ![](/img/favicon.webp)
+    
+    这是**图片注释**\
+    注释里面可以自由使用 $\text{Markdown}$ 语法\
+    文字是左对齐的，这别有韵味。
     </Img>
 </div>

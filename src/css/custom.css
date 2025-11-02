@@ -135,7 +135,7 @@ li[role='tab'] {
 .group {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 0.5rem 0;
     justify-content: center;
     align-items: center;

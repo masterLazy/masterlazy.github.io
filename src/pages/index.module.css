@@ -14,7 +14,7 @@
 }
 
 .headerContainer {
-  max-width: 95%;
+  max-width: 90%;
 
   @media (min-width: 61rem) {
     max-width: 61rem;
@@ -94,7 +94,7 @@
 }
 
 .mainContainer {
-  max-width: 95%;
+  max-width: 90%;
 
   @media (min-width: 61rem) {
     max-width: 61rem;

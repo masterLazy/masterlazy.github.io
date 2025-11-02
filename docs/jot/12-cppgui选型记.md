@@ -27,7 +27,9 @@ tags: [ccpp, stack, ramble]
 文档：[EasyX 文档 - 基本说明](https://docs.easyx.cn/zh-cn/intro)
 
 <div className='group'>
-    <Img src='https://easyx.cn/f/a/0/0/6/setup-vc2010-4.1.png' invertable>
+    <Img invertable>
+        ![](https://easyx.cn/f/a/0/0/6/setup-vc2010-4.1.png)
+        
         图自：https://easyx.cn/setup
     </Img>
 </div>
