@@ -9,22 +9,18 @@ KMP 类算法主要围绕 border 这一概念展开，并根据 border 的性质
 ## 什么是 Border
 
 Border 直译就是边框。对于一个字符串 $S$，其 border 是指这样一个子串 $s_1\not=S$，其既是 $S$ 的前缀，又是 $S$ 的后缀，比如：
-
-$$
-\fbox{ababc}\space abc\space\fbox{ababc}
-$$
-
-上图中框起来的就是 $S$ 的第一个 border。border 不一定是极大的，比如：$\fbox{ab}\space abcabcabc\space\fbox{ab}$ 这也是一个 border。border 也可以是重叠的前后缀。
+```
+[ababc]abc[ababc]
+```
+上图中框起来的就是 $S$ 的第一个 border。border 不一定是极大的，比如：`[a]aba[a]` 这也是一个 border。border 也可以是重叠的前后缀。
 
 我们可以得到 border 的两个小性质：
 
 - 如果 $A,B$ 都是 $S$ 的 border，且 $|A|\lt|B|$，那么 $A$ 是 $B$ 的 border。以下是一个例子：
-  
-  $$
-  \fbox{\fbox{ab}\space ab}\space abc\space\fbox{ab\space\fbox{ab}}
-  $$
-  
-  上图中 $ab$、$abab$ 都是整个字符串的 border，显然也满足 $ab$ 是 $abab$ 的 border。
+  ```
+  {[ab]ab}abc{ab[ab]}
+  ```
+  上图中 `ab`、`abab` 都是整个字符串的 border，显然也满足 `ab` 是 `abab` 的 border。
 
 - 对于一个串 $S$，其所有 border 构成的集合记为 $B(S)$，设 $A$ 是 $S$ 最大的 border，那么有：
   
@@ -39,25 +35,22 @@ $$
 KMP 算法做这样一件事：给定两个串 $S$、$P$，求 $P$ 是否是 $S$ 的一个子串。其时间复杂度在任何情况下都是 $O(n+m)$，其中 $n,m$ 分别是串 $S,P$ 的长度。这样的问题也叫**字符串的模式匹配**。
 
 KMP 的思想是**避免回溯**。让我们看下面的例子：
-
-$S=\fbox{abab}abx$
-
-$P=\fbox{abab}x$
-
+```
+S: [a b a b]a b x
+P: [a b a b]x
+```
 我们做模式匹配时，会用会用两个指针：$i,j$，分别遍历 $S,P$。如图 $i=3$，$j=3$。每次我们发现 $S[i]=P[j]$ 时，就让 $i\leftarrow i+1$，$j\leftarrow j+1$。
 
 如上图所示，我们匹配了前 4 个字符，当匹配到第 5 个字符时，发生了**失配**。对于朴素的匹配算法，我们可能会考虑让 $i$ 返回当前匹配段的起点，往后移一个位置，同时让 $j$ 回到 0。也就是尝试在以下位置继续匹配：
-
-$S=a\space\space\fbox{b}\space ababx$
-
-$P=\quad \fbox{a}\space babx$
-
-但是这样效率太慢了，相当于我们之前匹配的串的信息被浪费了。KMP 的思想是：**让 $i$ 永不回溯**。那怎么办呢？结合我们前面对 border 的铺垫，可以发现，$abab$ 这段匹配的串，其有一个 border $ab$。所以我们可以这样做：
-
-$S=ab\space\fbox{ab}\space abx$
-
-$P=\quad\space\fbox{ab}abx$ 
-
+```
+S: a[b]a b a b x
+P:  [a]b a b x
+```
+但是这样效率太慢了，相当于我们之前匹配的串的信息被浪费了。KMP 的思想是：**让 $i$ 永不回溯**。那怎么办呢？结合我们前面对 border 的铺垫，可以发现，`abab` 这段匹配的串，其有一个 border `ab`。所以我们可以这样做：
+```
+S: a b[a b]a b x
+P:    [a b]a b x
+```
 这样我们没有移动 $i$，而是让 $j$ 往前移。利用匹配串存在 border，或者说存在相同的前后缀这一信息，我们可以减少很多比较次数。注意和上面的 border 略有不同，我们这里希望找到最大的 border，即**最长公共前后缀**。
 
 怎么维护最长公共前后缀呢？

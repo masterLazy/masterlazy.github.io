@@ -28,7 +28,8 @@ Tarjan 算法可以在 $\approx O(n+m)$ 的时间复杂度下，**离线地**处
 原理分析：
 
 <div className='group'>
-    <Img src='/img/oi/tree-2.webp' invertable>
+    <Img invertable>
+    ![](../assets/tree-2.webp)
     </Img>
 </div>
 
@@ -54,9 +55,7 @@ Tarjan 算法可以在 $\approx O(n+m)$ 的时间复杂度下，**离线地**处
 
 Tarjan 算法可以在 $O(n+m)$ 的时间复杂度下求出一个图的强连通分量。
 
-> Tarjan 求 SCC 的算法，老师说是目前能接触到的最复杂的算法。
-> 
-> 这种算法在一篇获图灵奖的论文中发表，其原理非常复杂。
+> Tarjan 求 SCC 的算法，老师说是目前能接触到的最复杂的算法。这种算法在一篇获图灵奖的论文中发表，其原理非常复杂。
 > 
 > 实际操作中当成黑箱来用就可以了。
 
