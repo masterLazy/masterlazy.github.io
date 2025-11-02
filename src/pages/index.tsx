@@ -47,7 +47,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <Heading as='h2' id='computer-science' style={{ fontWeight: 'normal' }}>
+            <Heading as='h2' id='computer-science'>
               <strong>计算机科学</strong><span className={styles.separator}>|</span>Computer Science
             </Heading>
             <div className={styles.notebookContainer}>
@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <Heading as='h2' id='academic-subjects' style={{ fontWeight: 'normal' }}>
+            <Heading as='h2' id='academic-subjects'>
               <strong>文化课</strong><span className={styles.separator}>|</span>Academic Subjects
             </Heading>
             <div className={styles.notebookContainer}>

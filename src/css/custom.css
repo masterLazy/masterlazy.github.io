@@ -64,7 +64,7 @@
     transform: rotate(22.5deg);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;450;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@350;450;700&display=swap');
 
 html,
 h1,
@@ -88,7 +88,7 @@ span {
 
 [data-theme='dark'] p,
 [data-theme='dark'] span {
-    font-weight: 400;
+    font-weight: 350;
 }
 
 /* 下拉菜单 */

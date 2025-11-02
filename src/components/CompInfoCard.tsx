@@ -31,7 +31,7 @@ export default function CompInfoCard({
     const card = (
         <div className={`${styles.card} ${link && styles.cardLink}`}>
             <div className={styles.line}>
-                <span>{title}</span>
+                <span className={styles.title}>{title}</span>
             </div>
             <hr />
             <div className={styles.line}>
