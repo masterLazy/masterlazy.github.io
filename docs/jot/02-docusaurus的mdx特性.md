@@ -1,6 +1,6 @@
 # Docusaurus 的 MDX 特性
 
-MDX = Markdown with JDX。本文介绍 Docusaurus 中特别的 MDX 语法，按照笔者的使用频率排序。
+MDX = Markdown with JSX。本文介绍 Docusaurus 中特别的 MDX 语法，按照笔者的使用频率排序。
 
 这里的很多内容都摘自 [Docusaurus 介绍 | Docusaurus](https://docusaurus.io/zh-CN/docs)。
 

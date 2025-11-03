@@ -8,7 +8,7 @@ Docusaurus 提供的 React 组件（components）。
 
 ## *文档卡片
 
-```tsx
+```jsx
 import DocCard from '@theme/DocCard';
 
 <DocCard item={{type:'link',href:'https://www.luogu.com.cn',label:'洛谷',description:'计算机科学教育新生态'}} />
@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
     <summary>高级用法：选项卡之间可以同步选择</summary>
 
 
-    ```markdown
+    ```jsx
     <Tabs groupId="operating-systems">
       <TabItem value="win" label="Windows">Use Ctrl + C to copy.</TabItem>
       <TabItem value="mac" label="macOS">Use Command + C to copy.</TabItem>
@@ -93,7 +93,7 @@ import TabItem from '@theme/TabItem';
 
 下面的注释只起到说明作用，实际写文档的时候不能写注释，否则无法通过编译。
 
-```tsx
+```jsx
 import TOCInline from '@theme/TOCInline';
 
 <TOCInline
