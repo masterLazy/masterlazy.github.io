@@ -95,7 +95,7 @@ const config: Config = {
                 //
                 {
                     type: 'dropdown',
-                    label: '文化课',
+                    label: '学科笔记',
                     items: [
                         {
                             to: '/docs/math/intro',

@@ -18,7 +18,7 @@ tags: [ ramble ]
 
 ## 增强功能
 
-下面是一些笔者为 mNotebook 编写的增强功能。一些功能以 React 组件提供，已经预导入，无需额外配置。
+下面是一些笔者为 mNotebook 编写的增强功能。一些功能以 React 组件提供，已经预导入，无需在文档中 `import`。
 
 ### `.group`
 

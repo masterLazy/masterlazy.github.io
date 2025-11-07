@@ -27,6 +27,7 @@ math:
 
 unfinished:
   label: '*未完待续'
+  description: '有朝一日会写完吗？'
 
 learn-what:
   label: '⭐ 学到了什么'

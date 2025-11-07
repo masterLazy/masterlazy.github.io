@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             <Heading as='h2' id='academic-subjects'>
-              <strong>文化课</strong><span className={styles.separator}>|</span>Academic Subjects
+              <strong>学科笔记</strong><span className={styles.separator}>|</span>Academic Subjects
             </Heading>
             <div className={styles.notebookContainer}>
               <Link to={useBaseUrl('/docs/math/intro')}

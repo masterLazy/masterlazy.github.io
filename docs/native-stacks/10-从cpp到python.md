@@ -28,11 +28,11 @@ tags: [python, ccpp]
 ```python
 # 输出
 print('Hello, python!')
-# Python句末可以没有分号
+# Python 句末可以没有分号
 # 倾向于用没有分号
 
 # 输入
-a = input() # Python变量无需声明
+a = input() # Python 变量无需声明
 b = input('Enter b: ') # 提示用户要输入的内容
 ```
 
@@ -64,13 +64,13 @@ f = 1.0
 z = 1 + 2j # 不是1 + 2i
 ```
 
-> int(x)：将x转换为一个整数。
+> `int(x)`：将 `x` 转换为一个整数。
 >
-> float(x)：将x转换到一个浮点数。
+> `float(x)`：将 `x` 转换到一个浮点数。
 >
-> complex(x)：将x转换到一个复数，实数部分为 x，虚数部分为 0。
+> `complex(x)`：将 `x` 转换到一个复数，实数部分为 `x`，虚数部分为 0。
 >
-> complex(x, y)：将 x 和 y 转换到一个复数，实数部分为 x，虚数部分为 y。
+> `complex(x, y)`：将 `x` 和 `y` 转换到一个复数，实数部分为 `x`，虚数部分为 `y`。
 
 ### 字符串（string）
 
