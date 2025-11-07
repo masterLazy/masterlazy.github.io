@@ -45,7 +45,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 ## 更好看的 `<details>`
 
-笔者 swizzle 了这个组件，减小其视觉冲击。
+笔者 swizzle 了这个组件：[关于mNotebook](./mnotebook#文档中)。
 
 ````markdown
 <details>

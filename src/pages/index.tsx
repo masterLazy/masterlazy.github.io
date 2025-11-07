@@ -22,7 +22,7 @@ export default function Home() {
               </h2>
             </Link>
             <div className={styles.linkCardContainer}>
-              <Link to={useBaseUrl('/docs/category/随笔')}
+              <Link to={useBaseUrl('/docs/intro')}
                 className={styles.linkCard}>
                 📝 所有笔记
               </Link>
@@ -72,6 +72,10 @@ export default function Home() {
               <Link to={useBaseUrl('/docs/math/intro')}
                 className={styles.notebook}>
                 📝 数学<span className={styles.separator}>|</span>Math
+              </Link>
+              <Link to={useBaseUrl('/docs/chemistry/intro')}
+                className={styles.notebook}>
+                📝 化学<span className={styles.separator}>|</span>Chemistry
               </Link>
             </div>
             <hr />

@@ -58,11 +58,6 @@ const config: Config = {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            logo: {
-                alt: 'Site Logo',
-                src: '/img/favicon.webp',
-                target: '_self',
-            },
             title: 'mNotebook',
             items: [
                 {
@@ -100,6 +95,10 @@ const config: Config = {
                         {
                             to: '/docs/math/intro',
                             label: '数学',
+                        },
+                        {
+                            to: '/docs/chemistry/intro',
+                            label: '化学',
                         }
                     ],
                 },
@@ -119,7 +118,7 @@ const config: Config = {
                     items: [
                         {
                             label: '所有笔记',
-                            to: '/docs/category/随笔',
+                            to: '/docs/intro',
                         },
                         {
                             label: '标签列表',
