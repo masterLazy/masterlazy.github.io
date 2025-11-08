@@ -15,7 +15,7 @@
  */
 .card {
     background: var(--ifm-color-emphasis-100);
-    border: 1px solid transparent;
+    border: 1px solid var(--ifm-color-emphasis-300);
     box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
     border-radius: var(--ifm-global-radius);
     padding: 0.6rem;
@@ -24,7 +24,7 @@
     color: var(--ifm-font-color-base);
 
     @media(min-width: 997px) {
-        padding-left: 1rem;
+        padding: 0.6rem 1rem;
     }
 }
 

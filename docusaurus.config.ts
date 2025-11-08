@@ -68,7 +68,6 @@ const config: Config = {
                     to: '/docs/jot/intro',
                     label: '随笔',
                 },
-                //
                 {
                     type: 'dropdown',
                     label: '计算机科学',
@@ -87,7 +86,6 @@ const config: Config = {
                         },
                     ],
                 },
-                //
                 {
                     type: 'dropdown',
                     label: '学科笔记',
@@ -102,7 +100,6 @@ const config: Config = {
                         }
                     ],
                 },
-                //
                 {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
                     position: 'right',

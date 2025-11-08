@@ -118,7 +118,7 @@ a[rel='tag'] span {
 
 .alert {
     border: 1px solid var(--ifm-alert-border-color);
-    padding: 0.6rem 1rem;
+    padding: 1rem;
 
     @media(min-width: 997px) {
         padding: 1rem 1.4rem;
