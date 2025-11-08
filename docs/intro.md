@@ -18,8 +18,12 @@ import DocCardList from '@theme/DocCardList';
 1002    原生技术栈
 1003    Web 技术栈
 
-2001    数学
-2002    化学
+2001    
+2002    数学
+2003    英语
+2004    
+2005    化学
+2006    
 ```
 
 ---

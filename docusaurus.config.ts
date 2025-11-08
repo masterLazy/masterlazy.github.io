@@ -95,6 +95,10 @@ const config: Config = {
                             label: '数学',
                         },
                         {
+                            to: '/docs/english/intro',
+                            label: 'English',
+                        },
+                        {
                             to: '/docs/chemistry/intro',
                             label: '化学',
                         }
@@ -155,7 +159,7 @@ const config: Config = {
         prism: {
             theme: prismThemes.oneLight,
             darkTheme: prismThemes.oneDark,
-            additionalLanguages: ['java', 'csharp'],
+            additionalLanguages: ['java', 'csharp', 'bash'],
         },
         sidebar: {
             autoCollapseCategories: true,
@@ -163,9 +167,13 @@ const config: Config = {
     } satisfies Preset.ThemeConfig,
     stylesheets: [
         {
-            href: '/katex/katex.min.css',
+            href: 'https://s4.zstatic.net/npm/katex@0.16.25/dist/katex.min.css',
             type: 'text/css',
         },
+        /*{
+            href: '/katex/katex.min.css',
+            type: 'text/css',
+        },*/
     ],
 };
 

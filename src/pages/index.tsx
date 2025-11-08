@@ -73,6 +73,10 @@ export default function Home() {
                 className={styles.notebook}>
                 📝 数学<span className={styles.separator}>|</span>Math
               </Link>
+              <Link to={useBaseUrl('/docs/english/intro')}
+                className={styles.notebook}>
+                📝 英语<span className={styles.separator}>|</span>English
+              </Link>
               <Link to={useBaseUrl('/docs/chemistry/intro')}
                 className={styles.notebook}>
                 📝 化学<span className={styles.separator}>|</span>Chemistry
