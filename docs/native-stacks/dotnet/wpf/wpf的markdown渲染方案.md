@@ -6,13 +6,14 @@ tags: [ 'dotnet', 'csharp' ]
 
 最近笔者参与的项目有在 WPF 应用程序中渲染 Markdown 的需求。网上没找到太系统性的总结，故笔者在这里记录一下研究成果。大致有下面几种思路：
 
-1. **基于网页**：先用 CommonMark 之类的 Markdown 解释器把 `.md` 解释成 HTML，再以网页的形式显示出来。这种方式需要自行编写 `.css` 来为 Markdown 设置样式，但正因此灵活性更高，允许控制显示细节。实测这种方式的显示效果较好。
-2. **基于 Xaml**：直接把 Markdown 解释成 `FlowDocument`，然后直接用 WPF 组件渲染。实测感觉显示的效果很一般。
-3. **完全封装**：有的第三方库直接封装一个 Markdown Viewer，当成黑箱使用。这种方式灵活性最低，大多数库都是主英语的，中文显示效果不好。
+1. **基于 Web 渲染**：先用 CommonMark 之类的 Markdown 解释器把 `.md` 解释成 HTML，再以网页的形式显示出来。这种方式需要自行编写 `.css` 来为 Markdown 设置样式，但正因此灵活性更高，允许控制显示细节。实测这种方式的显示效果较好。
+2. **基于 Xaml**：把 Markdown 解释成 `FlowDocument` 对象，然后直接用 WPF 组件渲染。实测感觉显示的效果很一般。
 
 ### 先说结论
 
-- 推荐小型程序使用 **CommonMark + WebBrowser**。视觉效果优于基于 Xaml 的解释器（略有缺陷），只需额外的 148 KB 发布体积。
+笔者认为 Web 渲染的效果更好：[传送门](#web-渲染)
+
+- 推荐小型程序使用 **MarkDig + WebBrowser**。视觉效果优于基于 Xaml 的解释器（略有缺陷），只需额外的 148 KB 发布体积。
 - 如果你不在乎发布体积，用 **WebViewer2**。这会带来额外的 >10 MB 发布体积，但是会有最好的视觉效果。
 
 下面就介绍一下使用的 NuGet 第三方库以及实现细节。
@@ -122,7 +123,7 @@ var html = Markdown.ToHtml("Hello, **world**!", pipeline);
 
 ### Markdig.Wpf
 
-[Markdig.Wpf](https://github.com/Kryptos-FR/markdig.wpf) 是一个 Markdig 的拓展库，其提供了一个 `<MarkdownViewer>`，供直接显示 Markdown 文档。可以在这里看到效果展示：[Markdig.Wpf显示图片、导航栏和链接跳转-CSDN博客](https://blog.csdn.net/qq_48906261/article/details/149754533)。笔者写这篇笔记时，这个项目于 2024 年 **archived** 了，慎用。Github 上没有太多的使用指南。这里简单介绍一下怎么用：
+[Markdig.Wpf](https://github.com/Kryptos-FR/markdig.wpf) 是一个 Markdig 的拓展库，其提供了一个 `<MarkdownViewer>`，供直接显示 Markdown 文档。这个库是基于 Xaml 的，最终会通过 `FlowDocument` 在 WPF 中呈现。笔者写这篇笔记时，这个项目于 2024 年 **archived** 了，慎用。Github 上没有太多的使用指南。有一篇教程可供参考：[Markdig.Wpf显示图片、导航栏和链接跳转-CSDN博客](https://blog.csdn.net/qq_48906261/article/details/149754533)。这里简单介绍一下怎么用：
 
 1. 首先在 `<Windows>` 中添加命名空间：
 
@@ -154,7 +155,7 @@ var html = Markdown.ToHtml("Hello, **world**!", pipeline);
 
 ### Neo.Markdig.Xaml
 
-[Neo.Markdig.Xaml](https://github.com/neolithos/NeoMarkdigXaml) 是一个 Markdig 的拓展库，提供了一个把 Markdown 文档转换成 `FlowDocument` 的方法。用法如下：
+[Neo.Markdig.Xaml](https://github.com/neolithos/NeoMarkdigXaml) 是一个 Markdig 的拓展库，提供了一个把 Markdown 文档转换成 `FlowDocument` 的方法。与用法如下：
 
 1. 插入标签：
 
@@ -172,20 +173,11 @@ var html = Markdown.ToHtml("Hello, **world**!", pipeline);
        .Build()
    );
    ```
-
-效果如下，感觉和 Markdig.Wpf 差不多：
-
-<div className='group'>
-    <Img noBorder>
-        ![显示效果](./assets/md-in-neo-markdig-xaml.webp)
-
-        Neo.Markdig.Xaml
-    </Img>
-</div>
+笔者感觉 Neo.Markdig.Xaml 的视觉效果和 Markdig.Wpf 非常相似，因而这里就不放效果了。
 
 ## Web 渲染
 
-把 Markdown 解释成 HTML 后，我们便可以在 WPF 应用程序中以网页形式显示出来。
+把 Markdown 解释成 HTML 后，我们便可以在 WPF 应用程序中以网页形式显示出来。（推荐使用前文提到的 Markdig 并开启拓展）
 
 ### WebBrowser
 
@@ -194,7 +186,7 @@ WPF 内置了 `WebBrowser` 以提供网页显示功能。优点是启动快、�
 1. 准备一个 CSS，用于设置网页样式。具体来说可以做成**嵌入的资源**，运行时通过反射获取资源。以下是一个例子，效果还不错：
 
    ```css
-   body{font-family:Arial,sans-serif;color:#333;background-color:#fdfdfd;margin:5px 30px;font-size:15px}h1,h2,h3,h4,h5,h6{margin-top:1em;font-weight:600;line-height:1.25}h1{font-size:2em;border-bottom:1px solid #d0d0d0}h2{font-size:1.5em;border-bottom:1px solid #d0d0d0}h3{font-size:1.25em}h4,h4,h5{font-size:1em}p{margin-bottom:1em}a{color:#0366d6;text-decoration:none}a:hover{text-decoration:underline}ul,ol{margin:0;padding-left:2em;margin-bottom:1em}code{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;padding:0.2em 0.4em}pre{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;line-height:1.45;overflow:auto;padding:16px;margin-bottom:1em;width:calc(100% - 30px);word-wrap:break-word}pre code{background:none;padding:0}blockquote{border-left:4px solid #d0d0d0;color:#6a737d;margin:0 0 1em 0;padding:0 1em}hr{background-color:#d0d0d0;border:0;height:1px;margin:24px 0}strong{font-weight:700}em{font-style:italic}table{width:100%;border-collapse:collapse;margin-bottom:1em}th,td{border:1px solid #d0d0d0;padding:8px;text-align:left}th{background-color:#f3f3f3}
+   body{font-family:Arial,sans-serif;color:#333;background-color:#fdfdfd;margin:5px 30px;font-size:15px}h1,h2,h3,h4,h5,h6{margin-top:1em;font-weight:600;line-height:1.25}h1{font-size:2em;border-bottom:1px solid #d0d0d0}h2{font-size:1.5em;border-bottom:1px solid #d0d0d0}h3{font-size:1.25em}h4,h4,h5{font-size:1em}p{margin-bottom:1em}a{color:#0366d6;text-decoration:none}a:hover{text-decoration:underline}ul,ol{margin:0;padding-left:2em;margin-bottom:1em}code{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;padding:0.2em 0.4em}pre{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;line-height:1.45;overflow:auto;padding:16px;margin-bottom:1em;width:calc(100%-30px);word-wrap:break-word}pre code{background:none;padding:0}blockquote{border-left:4px solid #d0d0d0;color:#6a737d;margin:0 0 1em 0;padding:0 1em}hr{background-color:#d0d0d0;border:0;height:1px;margin:24px 0}strong{font-weight:700}em{font-style:italic}table{width:100%;border-collapse:collapse;margin-bottom:1em}th,td{border:1px solid #d0d0d0;padding:8px;text-align:left}th{background-color:#f3f3f3}
    ```
 
 2. 把 CSS 和解释后的 Markdown 组装：
@@ -203,7 +195,7 @@ WPF 内置了 `WebBrowser` 以提供网页显示功能。优点是启动快、�
    var html = $@"<html>
    <head><meta charset=""UTF-8""><style>{css}</style></head>
    <body>{content}</body>
-   </html>";
+   </html>"; // content 就是 Markdown 解析成的 HTML
    ```
 
    这里不写 `<!doctype html>` 也是可以的。推荐不写，这样可以和上面的 CSS 配合的很好。
@@ -232,7 +224,7 @@ WPF 内置了 `WebBrowser` 以提供网页显示功能。优点是启动快、�
     <Img noBorder>
         ![显示效果](./assets/md-in-webbrowser.webp)
 
-        MarkDig（开启拓展）+ WebBrowser
+        Markdig（开启拓展）+ WebBrowser
     </Img>
 </div>
 
@@ -274,7 +266,7 @@ WebView2 是微软官方推出的一个 WPF 组件，以 Edge 为内核实现网
     <Img noBorder>
         ![显示效果](./assets/md-in-webviewer2.webp)
 
-        MarkDig（开启拓展）+ WebViewer2
+        Markdig（开启拓展）+ WebViewer2
     </Img>
 </div>
 
