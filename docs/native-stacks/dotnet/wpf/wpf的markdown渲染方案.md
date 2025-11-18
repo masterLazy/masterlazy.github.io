@@ -13,7 +13,8 @@ tags: [ 'dotnet', 'csharp' ]
 
 笔者认为 Web 渲染的效果更好：[传送门](#web-渲染)
 
-- 推荐小型程序使用 **Markdig + WebBrowser**。视觉效果优于基于 Xaml 的解释器（略有缺陷），只需额外的 148 KB 发布体积。
+- 推荐小型程序使用 **Markdig + WebBrowser**。视觉效果优于基于 Xaml 的解释器（略有缺陷），只需额外的 148 KB 发布体积。强烈建议使用 **[MdViewer](https://github.com/masterLazy/MdViewer)**，其采用此方式实现，而且开箱即用，非常方便。
+
 - 如果你不在乎发布体积，用 **WebViewer2**。这会带来额外的 >10 MB 发布体积，但是会有最好的视觉效果。
 
 下面就介绍一下使用的 NuGet 第三方库以及实现细节。
@@ -179,15 +180,21 @@ var html = Markdown.ToHtml("Hello, **world**!", pipeline);
 
 把 Markdown 解释成 HTML 后，我们便可以在 WPF 应用程序中以网页形式显示出来。（推荐使用前文提到的 Markdig 并开启拓展）
 
+### MdViewer
+
+笔者编写了一个 NuGet 包：**[MdViewer](https://github.com/masterLazy/MdViewer)**，利用 Markdig 解释 Markdown，组装成网页，最后用 WebBrower 展示。笔者强烈推荐使用 MdViewer，这样不需要手动造轮子。具体可以看项目的 README，此处不再赘述。
+
+:::info
+
+下面的内容仅供展示核心原理，实现并不完备。完整的实现请参见 MdViewer。
+
+:::
+
 ### WebBrowser
 
 WPF 内置了 `WebBrowser` 以提供网页显示功能。优点是启动快、无需额外的 `.dll`。不过其用的是很旧的 IE 内核，CSS 支持很有限。如果不是非常追求美观（以及复杂功能），完全可以使用 `WebBrowser`。比较明显的缺陷是没有抗锯齿和无序列表不美观。
 
-1. 准备一个 CSS，用于设置网页样式。具体来说可以做成**嵌入的资源**，运行时通过反射获取资源。以下是一个例子，效果还不错：
-
-   ```css
-   body{font-family:Arial,sans-serif;color:#333;background-color:#fdfdfd;margin:5px 30px;font-size:15px}h1,h2,h3,h4,h5,h6{margin-top:1em;font-weight:600;line-height:1.25}h1{font-size:2em;border-bottom:1px solid #d0d0d0}h2{font-size:1.5em;border-bottom:1px solid #d0d0d0}h3{font-size:1.25em}h4,h4,h5{font-size:1em}p{margin-bottom:1em}a{color:#0366d6;text-decoration:none}a:hover{text-decoration:underline}ul,ol{margin:0;padding-left:2em;margin-bottom:1em}code{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;padding:0.2em 0.4em}pre{background-color:#f3f3f3;border-radius:8px;font-family:Consolas,sans-serif;font-size:0.9em;line-height:1.45;overflow:auto;padding:16px;margin-bottom:1em;width:calc(100%-30px);word-wrap:break-word}pre code{background:none;padding:0}blockquote{border-left:4px solid #d0d0d0;color:#6a737d;margin:0 0 1em 0;padding:0 1em}hr{background-color:#d0d0d0;border:0;height:1px;margin:24px 0}strong{font-weight:700}em{font-style:italic}table{width:100%;border-collapse:collapse;margin-bottom:1em}th,td{border:1px solid #d0d0d0;padding:8px;text-align:left}th{background-color:#f3f3f3}
-   ```
+1. 准备一个 CSS，用于设置网页样式。具体来说可以做成**嵌入的资源**，运行时通过反射获取资源。（此处略）
 
 2. 把 CSS 和解释后的 Markdown 组装：
 
@@ -253,12 +260,6 @@ WebView2 是微软官方推出的一个 WPF 组件，以 Edge 为内核实现网
        WebViewer.NavigateToString(html);
    }
    ```
-
-:::info
-
-此处没有设置链接行为，点击页面中的链接会直接在 WebViewer2 中打开。
-
-:::
 
 效果如下，笔者认为是视觉上最好的：
 

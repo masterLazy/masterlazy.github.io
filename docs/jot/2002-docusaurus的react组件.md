@@ -2,9 +2,10 @@
 
 Docusaurus 提供的 React 组件（components）。
 
+:::note
 这里的有些内容  [Docusaurus 介绍 | Docusaurus](https://docusaurus.io/zh-CN/docs) 没有（以下 * 符号注明），笔者参考了 Docusaurus 的仓库：
-
-> [docusaurus/packages/docusaurus-theme-classic/src/theme at main · facebook/docusaurus](https://github.com/facebook/docusaurus/tree/main/packages/docusaurus-theme-classic/src/theme)
+- https://github.com/facebook/docusaurus/tree/main/packages/docusaurus-theme-classic/src/theme
+:::
 
 ## *文档卡片
 

@@ -1,5 +1,5 @@
 ---
-tags: [unfinished]
+tags: [removing]
 ---
 # Tarjan 算法
 

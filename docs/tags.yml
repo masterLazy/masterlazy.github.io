@@ -14,7 +14,7 @@ network:
   label: ' 网络 '
 
 standard:
-  label: ' 规范 '
+  label: ' 强迫症 '
 
 stack:
   label: ' 技术栈（技术选型） '
@@ -28,6 +28,9 @@ math:
 unfinished:
   label: '*未完待续'
   description: '有朝一日会写完吗？'
+
+removing:
+  label: '*即将删除 / 拆分'
 
 learn-what:
   label: '⭐ 学到了什么'
