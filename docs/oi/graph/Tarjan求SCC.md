@@ -1,5 +1,5 @@
 ---
-tags: [unfinished]
+tags: [ unfinished ]
 ---
 # Tarjan 求 SCC
 
@@ -15,7 +15,7 @@ Tarjan 求 SCC 的算法，老师说是目前能接触到的最复杂的算法�
 
 Tarjan 算法中需要额外给图中每个节点 $u$ 维护以下变量：
 
-- $\text{dfn}_u$：做 DFS 时 $u$ 被访问的次序，即 DFS 序。
+- DFS 序 $\text{dfn}_u$
 
 - $\text{low}_u$：在 $u$ 的子树中，能够回溯到的、最早的已经在栈里的节点。（这个栈在下文解释）设以 $u$ 为根的子树为 $\text{Subtree}_u$，则 $\text{low}_u$ 定义为以下节点的 $\text{dfn}$ 的最小值：
   

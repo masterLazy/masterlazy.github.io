@@ -19,6 +19,8 @@
     background-color: #ffef5b;
     border-radius: 3px;
     box-decoration-break: clone;
+    position: relative;
+    z-index: -1;
 }
 
 [data-theme='dark'] .content {
