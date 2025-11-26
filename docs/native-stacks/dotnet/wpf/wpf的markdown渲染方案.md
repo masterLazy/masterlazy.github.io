@@ -4,6 +4,10 @@ tags: [ 'dotnet', 'csharp' ]
 
 # WPF 的 Markdown 渲染方案
 
+:::info
+本文适合想要了解技术实现细节的读者。如果你想要一个开箱即用的解决方案，可以试试 [**MdViewer**](https://github.com/masterLazy/MdViewer)，笔者强烈推荐。本文中并没有介绍所有实现细节，如需更多细节请移步 MdViewer 的仓库查看。
+:::
+
 最近笔者参与的项目有在 WPF 应用程序中渲染 Markdown 的需求。网上没找到太系统性的总结，故笔者在这里记录一下研究成果。大致有下面几种思路：
 
 1. **基于 Web 渲染**：先用 CommonMark 之类的 Markdown 解释器把 `.md` 解释成 HTML，再以网页的形式显示出来。这种方式需要自行编写 `.css` 来为 Markdown 设置样式，但正因此灵活性更高，允许控制显示细节。实测这种方式的显示效果较好。
