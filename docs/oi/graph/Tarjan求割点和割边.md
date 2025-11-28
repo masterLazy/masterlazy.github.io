@@ -34,11 +34,38 @@ Tarjan 可以在 $O(n)$ 的时间复杂度内求出一个**无向图**中的[割
 “不适用”的意思是：$u$ 为搜索起点时，**即使满足判据也不是**割点，需要另外的判据。
 :::
 
-### 总结
+### 总结 & 编码
 
 对于节点 $u$，其是割点，当且仅当：
 - $u$ 不是搜索起点，且存在 $u$ 的一个儿子 $v$，使得 $\text{low}_v\ge\text{dfn}_u$。
 - $u$ 是搜索起点，且 $u$ 在搜索树上只有一个儿子。
+
+编码如下，请重点关注更新 `low` 的两行：
+```cpp
+// 标记割点并统计割点数量
+void tarjan(int rt, int fa = 0) {
+    node[rt].low = node[rt].dfn = node[fa].dfn + 1;
+    int son = 0;
+    for (int e = node[rt].head; e; e = edge[e].next) {
+        int v = edge[e].to;
+        if (!node[v].dfn) { // 没搜到过，是儿子
+            son++;
+            tarjan(v, rt);
+            // highlight-next-line
+            node[rt].low = min(node[rt].low, node[v].low);
+            if (fa != 0 && !node[rt].isCut && node[v].low >= node[rt].dfn) {
+                node[rt].isCut = true, cnt++;
+            }
+        } else {
+            // highlight-next-line
+            node[rt].low = min(node[rt].low, node[v].dfn);
+        }
+    }
+    if (fa == 0 && !node[rt].isCut && son > 1) {
+        node[rt].isCut = true, cnt++;
+    }
+}
+```
 
 ### 例题
 

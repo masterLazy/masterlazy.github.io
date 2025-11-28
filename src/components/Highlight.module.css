@@ -17,7 +17,7 @@
     display: inline;
     padding: 2px;
     background-color: #ffef5b;
-    border-radius: 3px;
+    border-radius: var(--ifm-global-radius);
     box-decoration-break: clone;
     position: relative;
     z-index: -1;
