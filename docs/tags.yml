@@ -22,15 +22,13 @@ stack:
 ramble:
   label: ' 碎碎念 '
 
-math:
-  label: ' 数学 '
-
 unfinished:
-  label: '*未完待续'
+  label: '.未完待续'
   description: '有朝一日会写完吗？'
 
-removing:
-  label: '*即将删除 / 拆分'
+notplaned:
+  label: '.未完不续'
+  description: '这些文章不会写完了。'
 
 learn-what:
   label: '⭐ 学到了什么'

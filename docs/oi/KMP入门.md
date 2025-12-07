@@ -1,3 +1,6 @@
+---
+tags: [ notplaned ]
+---
 # KMP 入门
 
 KMP 类算法主要围绕 border 这一概念展开，并根据 border 的性质、引理等设计算法。
@@ -12,7 +15,7 @@ Border 直译就是边框。对于一个字符串 $S$，其 border 是指这样�
 ```
 [ababc]abc[ababc]
 ```
-上图中框起来的就是 $S$ 的第一个 border。border 不一定是极大的，比如：`[a]aba[a]` 这也是一个 border。border 也可以是重叠的前后缀。
+上图中框起来的就是 $S$ 的第一个 border。border 不一定是极大的，比如：`[a]aba[a]` 这也是一个 border。Border 也可以是重叠的前后缀。
 
 我们可以得到 border 的两个小性质：
 

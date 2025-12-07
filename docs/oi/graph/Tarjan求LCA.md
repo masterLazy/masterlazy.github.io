@@ -1,5 +1,5 @@
 ---
-tags: [ 'unfinished' ]
+tags: [ notplaned ]
 ---
 # Tarjan 求 LCA
 

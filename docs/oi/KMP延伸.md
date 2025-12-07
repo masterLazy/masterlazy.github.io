@@ -1,3 +1,6 @@
+---
+tags: [ notplaned ]
+---
 # KMP 延伸
 
 先回忆一下基本 KMP 的写法：
