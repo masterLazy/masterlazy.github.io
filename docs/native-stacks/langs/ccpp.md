@@ -1,5 +1,5 @@
 ---
-tags: [ccpp]
+tags: [c-cpp]
 ---
 # C/C++
 |                    | C                     | C++                   |

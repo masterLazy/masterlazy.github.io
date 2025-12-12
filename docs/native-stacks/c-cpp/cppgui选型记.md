@@ -1,5 +1,5 @@
 ---
-tags: [ccpp, stack, ramble]
+tags: [c-cpp, stack, ramble]
 ---
 # C++ GUI 选型记
 
@@ -29,7 +29,7 @@ tags: [ccpp, stack, ramble]
 <div className='group'>
     <Img>
         ![](https://easyx.cn/f/a/0/0/6/setup-vc2010-4.1.png)
-        
+
         图自：https://easyx.cn/setup
     </Img>
 </div>

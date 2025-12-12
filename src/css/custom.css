@@ -166,3 +166,12 @@ li[role='tab'] {
 .group .imgContainer {
     margin: 0;
 }
+
+/* 分栏 */
+.column {
+    @media(min-width: 997px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        gap: 1rem;
+    }
+}

@@ -73,16 +73,16 @@ const config: Config = {
                     label: '计算机科学',
                     items: [
                         {
-                            to: '/docs/oi/intro',
-                            label: '算法竞赛',
-                        },
-                        {
                             to: '/docs/native-stacks/intro',
                             label: '原生技术栈',
                         },
                         {
                             to: '/docs/web-stacks/intro',
                             label: 'Web 技术栈',
+                        },
+                        {
+                            to: '/docs/oi/intro',
+                            label: '算法竞赛',
                         },
                     ],
                 },

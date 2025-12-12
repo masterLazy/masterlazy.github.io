@@ -1,5 +1,5 @@
 ---
-tags: [ccpp, csharp, dotnet]
+tags: [c-cpp, csharp, dotnet]
 ---
 # C++/CLI
 
@@ -7,7 +7,7 @@ tags: [ccpp, csharp, dotnet]
 C++/CLI 仅在 Windows 上受支持。
 :::
 
-C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的超集），它扩展了 C++ 以支持 .NET；同时还可用于 [C# 与 C/C++ 互操作](csharp与ccpp互操作)。
+C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的超集），它扩展了 C++ 以支持 .NET；同时还可用于 [C# 与 C/C++ 互操作](csharp与c-cpp互操作)。
 
 > 微软似乎不太建议新的项目使用 C++/CLI：
 >
@@ -32,7 +32,7 @@ C++/CLI 是微软在 C++ 的基础上发明的一个语言（相当于 C++ 的�
 	![](./assets/cpp-cli-proj.webp)
 
 	C++/CLI 项目
-    </Img>
+	</Img>
 </div>
 
 “CLR” 指的是 Common Language Runtime（公共语言运行时）。总之就是我们想要的 C++/CLI。
@@ -67,6 +67,9 @@ int main() {
 
 其语法与 C# 类似，这里仅举两个例子：
 
+<div className='column'>
+
+
 ```cpp
 ref class MyRefClass {
     
@@ -78,6 +81,8 @@ value class MyValueClass {
     
 };
 ```
+
+</div>
 
 ## 使用 GC 堆
 
