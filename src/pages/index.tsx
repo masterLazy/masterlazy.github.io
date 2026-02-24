@@ -82,6 +82,21 @@ export default function Home() {
                 📝 化学<span className={styles.separator}>|</span>Chemistry
               </Link>
             </div>
+
+            <Heading as='h2' id='academic-subjects'>
+              <strong>艺术</strong><span className={styles.separator}>|</span>Academic Subjects
+            </Heading>
+            <div className={styles.notebookContainer}>
+              <Link to={useBaseUrl('/docs/moe/intro')}
+                className={styles.notebook}>
+                📝 萌物研究<span className={styles.separator}>|</span>Moe
+              </Link>
+              <Link to={useBaseUrl('/docs/music/intro')}
+                className={styles.notebook}>
+                📝 音乐<span className={styles.separator}>|</span>Music
+              </Link>
+            </div>
+
             <hr />
             <p>
               如无特殊说明，本站中的内容采用 <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>

@@ -105,6 +105,20 @@ const config: Config = {
                     ],
                 },
                 {
+                    type: 'dropdown',
+                    label: '艺术',
+                    items: [
+                        {
+                            to: '/docs/moe/intro',
+                            label: '萌物研究',
+                        },
+                        {
+                            to: '/docs/music/intro',
+                            label: '音乐',
+                        },
+                    ],
+                },
+                {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
                     position: 'right',
                     className: 'header-link header-github-link',
