@@ -13,9 +13,10 @@ import DocCardList from '@theme/DocCardList';
 1       关于 mNotebook
 
 1001    收藏
-100x    其他合集
+1002    命令行
+1003    如何…
 
-200x    其他
+200x    未归类
 ```
 
 ---
