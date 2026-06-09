@@ -1,3 +1,9 @@
+---
+tags: [csharp]
+---
+
+
+
 # C# 空引用
 
 C# 的引用类型（如 `string`）可以被赋值为 `null`，表示**空引用**。此时的引用并不指向任何对象。对空引用解引用会引发  `NullPointerException` 异常。例如：
