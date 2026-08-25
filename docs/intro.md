@@ -16,7 +16,6 @@ import DocCardList from '@theme/DocCardList';
 
 1001    算法竞赛
 1002    原生技术栈
-1003    Web 技术栈
 
 2001    
 2002    数学
@@ -24,6 +23,9 @@ import DocCardList from '@theme/DocCardList';
 2004    
 2005    化学
 2006    
+
+3001    音乐
+3002    萌物研究
 ```
 
 ---

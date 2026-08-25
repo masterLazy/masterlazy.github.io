@@ -119,18 +119,9 @@ h1 {
     margin-bottom: 4rem;
 }
 
-/* 文章 */
-.theme-doc-markdown {
-    background-color: var(--mlazy-article-color);
-
-    @media(min-width: 997px) {
-        border-radius: 16px;
-        padding: 1rem 3rem 5rem 3rem;
-    }
-
-    @media(max-width: 997px) {
-        padding: 2rem 3rem 5rem 3rem;
-    }
+h1::first-letter {
+    color: var(--ifm-color-primary);
+    font-size: 120%;
 }
 
 /* 下拉菜单 */
@@ -183,9 +174,25 @@ li[role='tab'] {
     border-radius: 0;
 }
 
-/* Markdown */
+/* 文章 */
+.markdown {
+    background-color: var(--mlazy-article-color);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 1rem 3rem 5rem 3rem;
+
+    @media(min-width: 997px) {
+        margin-right: 1rem;
+        padding: 1rem 3rem 5rem 3rem;
+    }
+}
+
 .markdown>h2 {
     border-bottom: var(--ifm-color-emphasis-500) solid 1px;
+}
+
+.markdown>blockquote {
+    border-left-width: 4px;
 }
 
 /*

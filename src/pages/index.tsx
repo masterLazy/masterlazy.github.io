@@ -51,13 +51,9 @@ export default function Home() {
               <strong>计算机科学</strong><span className={styles.separator}>|</span>Computer Science
             </Heading>
             <div className={styles.notebookContainer}>
-              <Link to={useBaseUrl('/docs/native-stacks/intro')}
+              <Link to={useBaseUrl('/docs/se/intro')}
                 className={styles.notebook}>
-                📝 原生技术栈<span className={styles.separator}>|</span>Native Stacks
-              </Link>
-              <Link to={useBaseUrl('/docs/web-stacks/intro')}
-                className={styles.notebook}>
-                📝 Web 技术栈<span className={styles.separator}>|</span>Web Stacks
+                📝 软件工程<span className={styles.separator}>|</span>SE
               </Link>
               <Link to={useBaseUrl('/docs/oi/intro')}
                 className={styles.notebook}>

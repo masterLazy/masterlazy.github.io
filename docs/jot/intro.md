@@ -14,9 +14,6 @@ import DocCardList from '@theme/DocCardList';
 
 1001    收藏
 1002    命令行
-1003    如何…
-
-200x    未归类
 ```
 
 ---
