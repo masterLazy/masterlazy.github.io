@@ -54,6 +54,9 @@
 <ul>
 <li class=""><a href="https://chai.ac.cn/" target="_blank" rel="noopener noreferrer" class="">柴扉 | CHAI</a>：很精致的博客，看出来博主也很用心地打造了博客系统。不过好像目前内容不多。</li>
 </ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="写在后面">写在后面<a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2" class="hash-link" aria-label="写在后面的直接链接" title="写在后面的直接链接" translate="no">​</a></h2>
+<p>从今天开始，我也在这个小站上写博客了。相比于那些放在 <code>docs/</code> 下的笔记，博客可能没有那么精致，也不用那么多花里胡哨的组件了。</p>
+<p>我还搬了一些之前写的，现在看来算作博客的文章到这里。</p>
 <br>
 <!-- -->
 <section data-footnotes="true" class="footnotes"><h2 class="anchor anchorTargetStickyNavbar_Vzrq sr-only" id="footnote-label">Footnotes<a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#footnote-label" class="hash-link" aria-label="Footnotes的直接链接" title="Footnotes的直接链接" translate="no">​</a></h2>
@@ -63,7 +66,43 @@
 </li>
 </ol>
 </section>]]></content:encoded>
-            <category>ramble</category>
+            <category> 碎碎念 </category>
+        </item>
+        <item>
+            <title><![CDATA[C# vs Java]]></title>
+            <link>https://masterLazy.github.io/blog/2026/08/20/</link>
+            <guid>https://masterLazy.github.io/blog/2026/08/20/</guid>
+            <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Java 和 C# 真是有非常微妙的差异。]]></description>
+            <content:encoded><![CDATA[<p>Java 和 C# 真是有非常微妙的差异。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="c-到-java">C# 到 Java<a href="https://masterlazy.github.io/blog/2026/08/20/#c-%E5%88%B0-java" class="hash-link" aria-label="C# 到 Java的直接链接" title="C# 到 Java的直接链接" translate="no">​</a></h3>
+<p>前段时间因为要写 mod，又开始写 Java。从 C# 到 Java 的感受，就是那些语法糖全没了，比如 <code>new()</code> 这种，搞个异步就得用 <code>Future&lt;&gt;</code> 之类，代码风格也不太适应。还有就是Java 的一些历史包袱，导致一些地方不如 C# 那么简洁（比如 <code>List.of()</code> 这种东西）。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="java-到-c">Java 到 C#<a href="https://masterlazy.github.io/blog/2026/08/20/#java-%E5%88%B0-c" class="hash-link" aria-label="Java 到 C#的直接链接" title="Java 到 C#的直接链接" translate="no">​</a></h3>
+<p>写了两周 Java，今天写回 C#，又感到不适应。首先是编辑器的不适应。VS 是远远没有IDEA精致好用的。就比如 IDEA 提示“可将字段设为readonly”，光标移过去就可以点“设为readonly”，VS 不知道为什么就没有。VS 的自动补全有时候会比较烦人，本来想缩进，按一下 tab 给我补全出来一坨。</p>
+<p>其次就是语法不习惯。比如 C# 有属性，Java 没有，只能写 getter/setter。虽然写getter/setter有点烦人，但是它也强迫你尽量封装，不要暴露太多细节。而c#有了属性，感觉就少了点“限制”。还有 C# 允许运算符重载，有时候就会有点懵。这就是所谓设计哲学的差异吧。代码风格也是，当时入门 C# 就搞不懂为什么 C# 的方法要用大驼峰，非得跟 Java 和其他语言对着干似的。</p>
+<hr>
+<p>总之感觉 Java 虽然历史包袱有点沉，但是设计似乎比较优雅；C# 固然简洁，但也有点接近 C++，有种奇怪的语法丰富但是容易写成史山的感觉。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[谈谈「语言硅基化」]]></title>
+            <link>https://masterLazy.github.io/blog/2026/02/13/</link>
+            <guid>https://masterLazy.github.io/blog/2026/02/13/</guid>
+            <pubDate>Fri, 13 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[「语言硅基化」？在我看来，背后的操盘手还是人类自己。]]></description>
+            <content:encoded><![CDATA[<p>「语言硅基化」？在我看来，背后的操盘手还是人类自己。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-味来自哪里">AI 味来自哪里<a href="https://masterlazy.github.io/blog/2026/02/13/#ai-%E5%91%B3%E6%9D%A5%E8%87%AA%E5%93%AA%E9%87%8C" class="hash-link" aria-label="AI 味来自哪里的直接链接" title="AI 味来自哪里的直接链接" translate="no">​</a></h3>
+<p>目前大多数LLM采用的是GPT架构，这是一种序列到序列的自回归模型。如很多人所知，序列的基本元素为「token」。一般来说，其训练有两个步骤。</p>
+<p>第一步是预训练，其核心优化（或者说训练）的核心目标是「最大似然估计」，即模型的「输出分布」要尽可能吻合「真实分布」。所谓真实分布，就是研究者采集的数据的分布。数学上，大概是用KL散度或交叉熵来衡量二者的差异。</p>
+<p>所以，在经过预训练后，模型的输出分布会接近真实分布，但受技术和训练方法所限，会有一定误差。然而，这个误差应该是随机的，不应该表现定向的差异。而现在说的「人机味」明显是有定向指向的，而非随机的产物。</p>
+<p>定向的「偏移」应该来自于「基于人类反馈的强化学习」（RLHF）。这个过程目标是「对齐」，即让模型的输出「迎合」人类预期。比如，「人类」更喜欢严谨、客观的回答，而不是像海量训练数据那样参差不齐的回答。</p>
+<p>而正是这个过程让模型输出的文本与人类语言有了可感知的「偏移」，即人机味。本质上，这也算是最大化满足人类期望的产物。这是人机味的第一推手。</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-为何可以影响语言">AI 为何可以影响语言<a href="https://masterlazy.github.io/blog/2026/02/13/#ai-%E4%B8%BA%E4%BD%95%E5%8F%AF%E4%BB%A5%E5%BD%B1%E5%93%8D%E8%AF%AD%E8%A8%80" class="hash-link" aria-label="AI 为何可以影响语言的直接链接" title="AI 为何可以影响语言的直接链接" translate="no">​</a></h3>
+<p>人机味的第二推手，源于AI生成的效率。AI生产文本的速度明显大于人类，于是在公开数据中，AI生产内容的占比会快速上升。事实上在未来的某个时刻，AI写下的句子将超过有史以来所以人类写下的。（谁知道现在没有呢？）AI内容占比的上升，相当于一次「源头投毒」。新AI接受预训练时，其「样本分布」就已经不是人类语言的「真实分布」了。这是一个不可逆的正反馈机制，只会让AI味越来越浓。</p>
+<p>再加上AI实在太方便了，不借助AI的「纯人类」内容的生产速度还会下降。</p>
+<hr>
+<p>「人机味」的泛滥，已经是大势所趋。</p>]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[C++ GUI 选型记]]></title>
@@ -86,7 +125,7 @@
 <!-- -->
 <p>主页：<a href="https://easyx.cn/" target="_blank" rel="noopener noreferrer" class="">EasyX Graphics Library for C++</a></p>
 <p>文档：<a href="https://docs.easyx.cn/zh-cn/intro" target="_blank" rel="noopener noreferrer" class="">EasyX 文档 - 基本说明</a></p>
-<div class="group"><div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><p><img decoding="async" loading="lazy" src="https://easyx.cn/f/a/0/0/6/setup-vc2010-4.1.png" alt="" class="img_ev3q"></p></div><p>图自：<a href="https://easyx.cn/setup" target="_blank" rel="noopener noreferrer" class="">https://easyx.cn/setup</a></p></div></div>
+<p><img decoding="async" loading="lazy" src="https://easyx.cn/f/a/0/0/6/setup-vc2010-4.1.png" alt="" class="img_ev3q"></p>
 <p>EasyX 是一个绘图库，这意味着它是没有 UI 功能的。但是 EasyX 非常简单！如果你是刚学会 <code>printf()</code> 或者 <code>cout &lt;&lt;</code> 的初学者，你一定会觉得上手 EasyX 很轻松。就看这个例子吧：</p>
 <div class="language-cpp codeBlockContainer_Ckt0 theme-code-block" style="--prism-background-color:hsl(230, 1%, 98%);--prism-color:hsl(230, 8%, 24%)"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cpp codeBlock_bY9V thin-scrollbar" style="background-color:hsl(230, 1%, 98%);color:hsl(230, 8%, 24%)"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token comment" style="color:hsl(230, 4%, 64%)">// 自 https://www.luogu.com.cn/article/9eazh2lm，略有修改</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain"></span><span class="token macro property directive-hash" style="color:hsl(5, 74%, 59%)">#</span><span class="token macro property directive keyword" style="color:hsl(301, 63%, 40%)">include</span><span class="token macro property" style="color:hsl(5, 74%, 59%)"> </span><span class="token macro property string" style="color:hsl(119, 34%, 47%)">&lt;easyx.h&gt;</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain"></span><span class="token keyword" style="color:hsl(301, 63%, 40%)">int</span><span class="token plain"> </span><span class="token function" style="color:hsl(221, 87%, 60%)">main</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">{</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">initgraph</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token number" style="color:hsl(35, 99%, 36%)">480</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">,</span><span class="token number" style="color:hsl(35, 99%, 36%)">600</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"> </span><span class="token comment" style="color:hsl(230, 4%, 64%)">// 初始化窗口</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">setlinecolor</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token plain">WHITE</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">setfillcolor</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token plain">RED</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">fillrectangle</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token number" style="color:hsl(35, 99%, 36%)">150</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">,</span><span class="token plain"> </span><span class="token number" style="color:hsl(35, 99%, 36%)">60</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">,</span><span class="token plain"> </span><span class="token number" style="color:hsl(35, 99%, 36%)">200</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">,</span><span class="token plain"> </span><span class="token number" style="color:hsl(35, 99%, 36%)">85</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"> </span><span class="token comment" style="color:hsl(230, 4%, 64%)">// 画一个矩形</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">Sleep</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token number" style="color:hsl(35, 99%, 36%)">5000</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token function" style="color:hsl(221, 87%, 60%)">closegraph</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">(</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">)</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"> </span><span class="token comment" style="color:hsl(230, 4%, 64%)">// 关闭窗口</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain">    </span><span class="token keyword" style="color:hsl(301, 63%, 40%)">return</span><span class="token plain"> </span><span class="token number" style="color:hsl(35, 99%, 36%)">0</span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">;</span><span class="token plain"></span><br></div><div class="token-line" style="color:hsl(230, 8%, 24%)"><span class="token plain"></span><span class="token punctuation" style="color:hsl(119, 34%, 47%)">}</span><br></div></code></pre></div></div>
 <p>我曾用 EasyX 写过蛮多程序的，如今仅仅是注视着这些程序的名字，就令我十分怀念：</p>
@@ -136,9 +175,57 @@
 </ul>
 <p>…但总不是很满意。后来我认定了，用 C++ 开发 GUI 注定是痛苦的。</p>
 <p>后来我又探索了 Dart（写了代码）、C#（写了代码）、Java（没写代码）的 GUI，后来选定了 C# + WPF 的方案。目前来说，这仍是我采用的技术栈。</p>]]></content:encoded>
-            <category>c-cpp</category>
-            <category>stack</category>
-            <category>ramble</category>
+            <category> C/C++ </category>
+            <category> 技术栈（技术选型） </category>
+            <category> 碎碎念 </category>
+        </item>
+        <item>
+            <title><![CDATA[写 C# 有感]]></title>
+            <link>https://masterLazy.github.io/blog/2025/09/07/</link>
+            <guid>https://masterLazy.github.io/blog/2025/09/07/</guid>
+            <pubDate>Sun, 07 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[最近用 C# 写了10 几 KB 的代码，越来越觉得C#远远大于 C++。]]></description>
+            <content:encoded><![CDATA[<p>最近用 C# 写了10 几 KB 的代码，越来越觉得C#远远大于 C++。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="语言特性">语言特性<a href="https://masterlazy.github.io/blog/2025/09/07/#%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7" class="hash-link" aria-label="语言特性的直接链接" title="语言特性的直接链接" translate="no">​</a></h3>
+<p>首先语言特性上就领先 C++ 很多。比如众所周知 C++ 的异常处理基本上是废的，但C#的异常机制可以很好地运作。还有反射机制、各种语法糖（C#应该是出了名的很多语法糖）。另外C#有更严格的静态流检查，可以帮助排除很多玄学问题。体验非常舒适。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="编辑器">编辑器<a href="https://masterlazy.github.io/blog/2025/09/07/#%E7%BC%96%E8%BE%91%E5%99%A8" class="hash-link" aria-label="编辑器的直接链接" title="编辑器的直接链接" translate="no">​</a></h3>
+<p>还有不得不提 VS 的 IntelliCode ，向 C# 严重倾斜。C++里 IntelliCode 的作用几乎为零，但是 C# 里 IntelliCode 约等于半个自动驾驶了。只需要按Tab接受自动补全就好了。虽然没有 Copilot 那么智能，但我觉得恰到好处。还有很赞的自动起名功能。 IntelliCode 真的大幅节省了编码时间，提高了生产力。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="配套设施">配套设施<a href="https://masterlazy.github.io/blog/2025/09/07/#%E9%85%8D%E5%A5%97%E8%AE%BE%E6%96%BD" class="hash-link" aria-label="配套设施的直接链接" title="配套设施的直接链接" translate="no">​</a></h3>
+<p>还有配套的丰富的 .NET SDK ，比 C++ 的标准库强太多了。很多轮子即拆即用，非常方便。尤其在文件操作、网络操作、序列化这些，非常方便。而且.NET各组件涵盖前后端，所以用 C# 做全栈开发简直是丝滑无比。相比之下C++的标准库，还有什么WindowsAPI，就显得很笨拙。</p>
+]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[上古笔记本电脑维修记]]></title>
+            <link>https://masterLazy.github.io/blog/2025/07/12/</link>
+            <guid>https://masterLazy.github.io/blog/2025/07/12/</guid>
+            <pubDate>Sat, 12 Jul 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[又名：《废铁转生之再战三年》]]></description>
+            <content:encoded><![CDATA[<p>又名：《废铁转生之再战三年》</p>
+<p><img decoding="async" loading="lazy" alt="日志图片" src="https://masterlazy.github.io/assets/images/2025-07-12-01-4b8034044b57e9d6516be3d667b437e1.webp" width="800" height="600" class="img_ev3q"></p>
+<p>最近两天一直在致力于修一台 12 年前发售的上古笔记本电脑，它可以开机，但是无法引导进入 OS。（注：为了叙述简洁，没有按照时间顺序来写。）</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-i">Part I<a href="https://masterlazy.github.io/blog/2025/07/12/#part-i" class="hash-link" aria-label="Part I的直接链接" title="Part I的直接链接" translate="no">​</a></h2>
+<p>由于古老性，我严重忧虑它没法运行 Windows 10，所以决定安装 Ubuntu 24.04.2 LTS。然而尝试安装了好几次，都卡在把镜像写入硬盘这一步（File I/O Error、BrokenPipe）。尝试了各种安装选项，重新给硬盘简历分区表和重新格式化，问题依然存在。怀疑是硬盘问题，就测试写入。发现可以写入，很奇怪，又试了一次，还是卡在相同的步骤。</p>
+<p>于是乎，把硬盘拆下来连到另外一台电脑上检测，果然发现了四个柱面有坏道，还是分散在三处的。</p>
+<p><img decoding="async" loading="lazy" alt="日志图片" src="https://masterlazy.github.io/assets/images/2025-07-12-02-f95cb888d22f987967bb72e23f39ca43.webp" width="800" height="574" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-ii">Part II<a href="https://masterlazy.github.io/blog/2025/07/12/#part-ii" class="hash-link" aria-label="Part II的直接链接" title="Part II的直接链接" translate="no">​</a></h2>
+<p>换了一块硬盘，成功安装了 Ubuntu。然而我不甘心，还是想用之前的旧硬盘来装 OS。用 DiskGenius 来创建分区，恰避开了损坏的柱面。然而，Ubuntu 24.04.2 LTS 没法安装，后来试了 Ubuntu 22.04.5，也不行。Windows 10 倒是可以装，不过装完过了不久自己卡死了。遂放弃，可能这块盘比较邪吧。</p>
+<p>盲猜：系统所在分区前面就是坏道所在，引导的时候可能要一路读过去，遇到坏道就卡了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-iii">Part III<a href="https://masterlazy.github.io/blog/2025/07/12/#part-iii" class="hash-link" aria-label="Part III的直接链接" title="Part III的直接链接" translate="no">​</a></h2>
+<p>Ubuntu 很好，但是有一个严重的问题，笔记本的键盘和触控板都失灵了。试着装了 Windows 10，却没有这个问题。而且在运行 Ubuntu Live OS 期间也没有这个问题。尝试询问 Deepseek，但是它没能给出完全解决的方法（不过辅助分析了问题）。后来试了半天，发现惊天的现象：把笔记本合上再打开键盘就能用了，但是触控板不能。还有一个观察就是键盘失灵期间 Capslock一直是亮着的。</p>
+<p>检查内核启动日志，果然发现 Error，原来似乎是 ACPI 尝试对键盘调用“显卡亮度控制方法”</p>
+<p>（_BCL，Deepseek 告诉我的），出错了。但是没能找到解决方法。想了想，或许试着升级一下主板 BIOS 固件可以解决问题。</p>
+<p><img decoding="async" loading="lazy" alt="日志图片" src="https://masterlazy.github.io/assets/images/2025-07-12-03-5f1b10fb945604bbaf2bdb7cd5ed316b.webp" width="800" height="246" class="img_ev3q"></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-iv">Part IV<a href="https://masterlazy.github.io/blog/2025/07/12/#part-iv" class="hash-link" aria-label="Part IV的直接链接" title="Part IV的直接链接" translate="no">​</a></h2>
+<p>到 DELL 官网一搜，吓一跳，发现 BIOS 固件紧急更新。可是更新程序是 .exe 格式的，Linux 就别想跑了。可是为了这个装 Windows 太麻烦了。于是先后尝试用 PE OS，MS-DOS 安装，均失败。最后咬咬牙，装了 Windows 10，然而打开程序说，要求插入电池。然而电池已经坏了，所以 BIOS 固件是别想更新了。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-v">Part V<a href="https://masterlazy.github.io/blog/2025/07/12/#part-v" class="hash-link" aria-label="Part V的直接链接" title="Part V的直接链接" translate="no">​</a></h2>
+<p>于是尝试了 Ubuntu MATE 24.04.2 LTS，这个发行版据说比较适合旧设备，然而装了不但没解决问题，UI 也不是很好看。又尝试 Ubuntu 22.04.5 LTS，不过问题仍在。看来是要妥协了，装了 Windows 10，不得不说真的是一步一卡，等到我傻。同时在 discourse.ubuntu.com 上创建了一个帖子寻求社区帮助。本来我是对此不抱什么希望的，要么没人理，要么解决周期很长。不过出乎意料，创建一小时后就有人回复了。四小时前，有人给出了尝试方案。我试了下，真的有用，太神了。实际上就是往内核启动参数里面加 i8042.reset。</p>
+<p><img decoding="async" loading="lazy" alt="日志图片" src="https://masterlazy.github.io/assets/images/2025-07-12-04-fe7905607a6c6af5c398030128e60996.png" width="800" height="642" class="img_ev3q"></p>
+<p>（以下内容追加于同月13日）</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="part-vi">Part VI<a href="https://masterlazy.github.io/blog/2025/07/12/#part-vi" class="hash-link" aria-label="Part VI的直接链接" title="Part VI的直接链接" translate="no">​</a></h2>
+<p>还有一点小问题：无线网卡损坏、空格键坏了。</p>
+<p>空格键坏了，难修，但是可以把右 Alt 键（反正一年也用不到几次）映射成空格，曲线救国。</p>
+<p>网络方面，买了一块无线网卡（就是一个小USB），不过淘宝上买大多数都只提供 Windows 驱动，少部分说支持 Linux，但实际上要求你自己编译，相当于“理论可行，剩下的你自己来吧”，而且不提供技术支持（只是留一个 CSDN 和 GitHub 链接）。于是把网卡接到 Windows 电脑上安装驱动，发现芯片型号是 AIC8800D80，顺藤摸瓜，找到了有人把腾达提供的驱动源码修改了一下上传到了 GitHub 的仓库。clone 之后拷贝 rules 和 firmware，然后 make，然后 sudo make install，就成功安装了驱动。</p>]]></content:encoded>
         </item>
     </channel>
 </rss>

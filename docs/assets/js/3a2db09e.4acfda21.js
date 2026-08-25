@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkm_notebook=self.webpackChunkm_notebook||[]).push([["3186"],{8070(a){a.exports=JSON.parse('{"tags":[{"label":"ramble","permalink":"/blog/tags/ramble","count":2},{"label":"c-cpp","permalink":"/blog/tags/c-cpp","count":1},{"label":"stack","permalink":"/blog/tags/stack","count":1}]}')}}]);
