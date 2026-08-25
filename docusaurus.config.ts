@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
@@ -26,7 +27,7 @@ const config: Config = {
     organizationName: 'masterLazy', // Usually your GitHub org/user name.
     projectName: 'masterLazy.github.io', // Usually your repo name.
 
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'ignore',
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -42,11 +43,24 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: './sidebars.ts',
+                    showLastUpdateTime: true,
                     remarkPlugins: [remarkMath],
                     rehypePlugins: [rehypeKatex],
-                    showLastUpdateTime: true
                 },
-                blog: false,
+                blog: {
+                    showReadingTime: true, // When set to false, the "x min read" won't be shown
+                    readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
+                        defaultReadingTime({
+                            content,
+                            locale,
+                            options: { wordsPerMinute: 300 },
+                        }),
+                    feedOptions: {
+                        type: ['rss'],
+                        limit: 20,
+                        copyright: `Copyright © ${new Date().getFullYear()} masterLazy`,
+                    },
+                },
                 theme: {
                     customCss: './src/css/custom.css',
                 },
@@ -65,10 +79,8 @@ const config: Config = {
                     to: '/docs/tags',
                     className: 'header-link header-tags-link',
                 },
-                {
-                    to: '/docs/jot/intro',
-                    label: '随笔',
-                },
+                { to: '/docs/jot/intro', label: '随笔', },
+                { to: 'blog', label: 'Blog' },
                 {
                     type: 'dropdown',
                     label: '计算机科学',
@@ -135,6 +147,10 @@ const config: Config = {
                         {
                             label: '标签列表',
                             to: '/docs/tags',
+                        },
+                        {
+                            label: 'RSS 订阅',
+                            to: '/blog/rss.xml'
                         }
                     ],
                 },

@@ -114,16 +114,6 @@ h6 {
     color: var(--mlazy-header-color);
 }
 
-h1 {
-    margin-top: 8rem;
-    margin-bottom: 4rem;
-}
-
-h1::first-letter {
-    color: var(--ifm-color-primary);
-    font-size: 120%;
-}
-
 /* 下拉菜单 */
 .dropdown__menu {
     padding: 0;
@@ -177,14 +167,26 @@ li[role='tab'] {
 /* 文章 */
 .markdown {
     background-color: var(--mlazy-article-color);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
-    padding: 1rem 3rem 5rem 3rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 
     @media(min-width: 997px) {
-        margin-right: 1rem;
-        padding: 1rem 3rem 5rem 3rem;
+        max-width: 950px;
+        border-radius: 16px;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
+}
+
+
+h1 {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+h1::first-letter {
+    color: var(--ifm-color-primary);
+    font-size: 120%;
 }
 
 .markdown>h2 {
