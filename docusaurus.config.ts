@@ -27,7 +27,7 @@ const config: Config = {
     organizationName: 'masterLazy', // Usually your GitHub org/user name.
     projectName: 'masterLazy.github.io', // Usually your repo name.
 
-    onBrokenLinks: 'ignore',
+    onBrokenLinks: 'ignore', // Linking to /blog/rss.xml
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -48,7 +48,8 @@ const config: Config = {
                     rehypePlugins: [rehypeKatex],
                 },
                 blog: {
-                    showReadingTime: true, // When set to false, the "x min read" won't be shown
+                    blogSidebarCount: 20,
+                    showReadingTime: true,
                     readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
                         defaultReadingTime({
                             content,
