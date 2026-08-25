@@ -8,8 +8,8 @@ import styles from './index.module.css';
 
 export default function Home() {
   return (
-    <Layout description='Description will go into a meta tag in <head />'>
-      <main>
+    <Layout description='masterLazy/悠哉法师的赛博笔记本'>
+      <main style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div className={styles.header}>
           <div className={styles.headerContainer}>
             <img src="https://cn.cravatar.com/avatar/1BBD3CEC186505445320A17922EC5D59?s=1000"

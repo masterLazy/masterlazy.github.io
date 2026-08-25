@@ -14,19 +14,25 @@
    limitations under the License.
  */
 :root {
-    --ifm-color-primary: #2e5b85;
-    --ifm-color-primary-dark: #295278;
-    --ifm-color-primary-darker: #274d71;
-    --ifm-color-primary-darkest: #20405d;
-    --ifm-color-primary-light: #336492;
-    --ifm-color-primary-lighter: #356999;
-    --ifm-color-primary-lightest: #3c76ad;
+    --ifm-color-primary: #3095d5;
+    --ifm-color-primary-dark: #2887c3;
+    --ifm-color-primary-darker: #257fb8;
+    --ifm-color-primary-darkest: #1f6998;
+    --ifm-color-primary-light: #46a0d9;
+    --ifm-color-primary-lighter: #51a6dc;
+    --ifm-color-primary-lightest: #71b6e2;
     --ifm-color-secondary: #ebedf0;
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
+    --ifm-footer-background-color: #f4f6f9;
+    --ifm-background-color: #f4f6f9;
+
     --ifm-color-primary-pale: #96ccff;
     --ifm-color-primary-paler: #cbe6ff;
+
+    --mlazy-header-color: #3b4348;
+    --mlazy-article-color: #fcfcfd;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -41,8 +47,14 @@
     --ifm-color-secondary: #313131;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
+    --ifm-footer-background-color: #1b1b1d;
+    --ifm-background-color: #1b1b1d;
+
     --ifm-color-primary-pale: #2e5b85;
     --ifm-color-primary-paler: #20405d;
+
+    --mlazy-header-color: #d5dfe6;
+    --mlazy-article-color: #262629;
 }
 
 /* 导航栏链接 */
@@ -91,6 +103,34 @@ h6,
 
 em {
     font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--mlazy-header-color);
+}
+
+h1 {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+/* 文章 */
+.theme-doc-markdown {
+    background-color: var(--mlazy-article-color);
+
+    @media(min-width: 997px) {
+        border-radius: 16px;
+        padding: 1rem 3rem 5rem 3rem;
+    }
+
+    @media(max-width: 997px) {
+        padding: 2rem 3rem 5rem 3rem;
+    }
 }
 
 /* 下拉菜单 */

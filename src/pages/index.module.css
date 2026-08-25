@@ -86,7 +86,7 @@
 }
 
 .linkCard:hover {
-  background-color: var(--ifm-background-surface-color);
+  background-color: var(--mlazy-article-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   border: 1px solid var(--ifm-color-primary);
@@ -114,7 +114,6 @@
 }
 
 .notebook {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0), var(--ifm-color-emphasis-100));
   padding: 1.2rem;
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: var(--ifm-global-radius);
@@ -135,6 +134,7 @@
 }
 
 .notebook:hover {
+  background-color: var(--mlazy-article-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   border: 1px solid var(--ifm-color-primary);
