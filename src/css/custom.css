@@ -31,7 +31,7 @@
     --ifm-color-primary-pale: #96ccff;
     --ifm-color-primary-paler: #cbe6ff;
 
-    --mlazy-header-color: #3b4348;
+    --mlazy-header-color: #303538;
     --mlazy-article-color: #fcfcfd;
 
     --mlazy-article-max-width: 950px;
@@ -124,8 +124,14 @@ h6 {
     color: var(--mlazy-header-color);
 }
 
+/* 页脚 */
+
 .footer {
     border-top: var(--ifm-color-emphasis-300) solid 1px;
+}
+
+.footer__copyright {
+    color: var(--ifm-color-emphasis-700)
 }
 
 /* 下拉菜单 */
@@ -182,6 +188,7 @@ li[role='tab'] {
 .markdown {
     background-color: var(--mlazy-article-color);
     max-width: var(--mlazy-article-max-width);
+    border: var(--ifm-color-emphasis-300) solid 1px;
     padding-top: 2rem;
     padding-bottom: 5rem;
     margin-bottom: -2rem;
@@ -201,8 +208,10 @@ li[role='tab'] {
 }
 
 h1 {
-    font-size: 2.4rem;
-    margin-top: 6rem;
+    @media(min-width: 997px) {
+        margin-top: 6rem;
+    }
+
     margin-bottom: 4rem;
 }
 
@@ -212,8 +221,7 @@ h1::first-letter {
 }
 
 .markdown>h2 {
-    font-size: 1.8rem;
-    border-bottom: var(--ifm-color-emphasis-500) solid 1px;
+    border-bottom: var(--ifm-color-emphasis-400) solid 1px;
 }
 
 .markdown>blockquote {
