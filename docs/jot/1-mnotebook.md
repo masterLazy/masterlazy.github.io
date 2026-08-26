@@ -2,7 +2,7 @@
 tags: [ ramble ]
 ---
 
-# ⭐ 关于 mNotebook
+# 关于 mNotebook
 
 > 名字来源：**m**asterLazy's **Notebook**。
 
@@ -135,7 +135,7 @@ tags: [ ramble ]
 <div className='group'>
     <Img>
     ![](/img/favicon.webp)
-    
+
     这是**图片注释**\
     注释里面可以自由使用 $\text{Markdown}$ 语法\
     文字是左对齐的，这别有韵味。
