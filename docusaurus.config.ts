@@ -27,7 +27,7 @@ const config: Config = {
     organizationName: 'masterLazy', // Usually your GitHub org/user name.
     projectName: 'masterLazy.github.io', // Usually your repo name.
 
-    onBrokenLinks: 'ignore', // Linking to /blog/rss.xml
+    onBrokenLinks: 'throw',
 
     // Even if you don't use internationalization, you can use this field to set
     // useful metadata like html lang. For example, if your site is Chinese, you
@@ -42,23 +42,26 @@ const config: Config = {
             'classic',
             {
                 docs: {
+                    tags: '../tags.yml',
                     sidebarPath: './sidebars.ts',
                     showLastUpdateTime: true,
                     remarkPlugins: [remarkMath],
                     rehypePlugins: [rehypeKatex],
                 },
                 blog: {
+                    tags: '../tags.yml',
                     blogSidebarCount: 20,
                     showReadingTime: true,
                     readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
                         defaultReadingTime({
                             content,
                             locale,
-                            options: { wordsPerMinute: 300 },
+                            options: { wordsPerMinute: 250 },
                         }),
                     feedOptions: {
                         type: ['rss'],
                         limit: 20,
+                        xslt: true,
                         copyright: `Copyright © ${new Date().getFullYear()} masterLazy`,
                     },
                 },
@@ -81,7 +84,7 @@ const config: Config = {
                     className: 'header-link header-tags-link',
                 },
                 { to: '/docs/jot/intro', label: '随笔', },
-                { to: 'blog', label: 'Blog' },
+                { to: 'blog', label: '博客' },
                 {
                     type: 'dropdown',
                     label: '计算机科学',
@@ -129,10 +132,15 @@ const config: Config = {
                     ],
                 },
                 {
+                    href: 'https://masterlazy.github.io/blog/rss',
+                    position: 'right',
+                    className: 'header-link header-rss-link',
+                },
+                {
                     href: 'https://github.com/masterLazy/masterlazy.github.io',
                     position: 'right',
                     className: 'header-link header-github-link',
-                },
+                }
             ],
         },
         footer: {
@@ -150,8 +158,8 @@ const config: Config = {
                             to: '/docs/tags',
                         },
                         {
-                            label: 'RSS 订阅',
-                            to: '/blog/rss.xml'
+                            label: '订阅 RSS',
+                            to: 'https://masterLazy.github.io/blog/rss.xml'
                         }
                     ],
                 },

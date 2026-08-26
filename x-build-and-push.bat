@@ -22,7 +22,7 @@ echo 构建完成
 
 echo.
 echo * Task: 更新构建分支
-call robocopy "build" "%buildPath%/docs" /MIR /NFL /NDL
+call robocopy "build" "%buildPath%/docs" /MIR /NFL /NDL /NJH
 :: robocopy 的返回值比较奇葩
 if %errorlevel% geq 4 (
     goto :rollbackMain

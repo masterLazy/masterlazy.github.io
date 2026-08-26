@@ -4,7 +4,6 @@
  */
 
 .header {
-  background: var(--ifm-footer-background-color);
   padding-top: 3rem;
   padding-bottom: 1rem;
   display: flex;
@@ -31,20 +30,6 @@
   color: var(--ifm-color-primary);
 }
 
-.body {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.body h2 {
-  font-weight: normal;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 .separator {
   color: var(--ifm-color-emphasis-500);
   margin-left: 0.6rem;
@@ -60,81 +45,4 @@
   @media (min-width: 997px) {
     width: 13rem;
   }
-}
-
-.linkCardContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-
-  @media (min-width: 997px) {
-    flex-direction: row;
-  }
-}
-
-.linkCard {
-  border-radius: var(--ifm-global-radius);
-  padding: 1rem;
-  transition: all 0.3s;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  margin: 0.5rem;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  text-align: left;
-}
-
-.linkCard:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  border: 1px solid var(--ifm-color-primary);
-  color: var(--ifm-color-emphasis-800);
-}
-
-.mainContainer {
-  max-width: 90%;
-
-  @media (min-width: 61rem) {
-    max-width: 61rem;
-  }
-}
-
-.notebookContainer {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 997px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 0.5rem;
-  }
-}
-
-.notebook {
-  padding: 1.2rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: var(--ifm-global-radius);
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  width: 100%;
-  transition: all 0.3s;
-
-  @media (min-width: 997px) {
-    width: calc(50% - 0.5rem);
-    margin: 0;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-}
-
-.notebook:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  border: 1px solid var(--ifm-color-primary);
-  color: var(--ifm-color-emphasis-800);
 }
