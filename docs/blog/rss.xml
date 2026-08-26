@@ -31,7 +31,8 @@
 </blockquote>
 <p>所以就开始有写博客的念头了。起初用的就是博客园。它老牌，可靠，有很多成熟的美化方案，而且免费使用，少量广告。不用自建站，国内访问快。</p>
 <p>那为什么后来又不用了呢？</p>
-<p>原因有两点。其一，虽然确实有非常成熟的美化方案（awescnb，现在改名 <a href="https://github.com/guangzan/tona" target="_blank" rel="noopener noreferrer" class="">tona</a> 了，我还 fork 过这个仓库来着），但是嘛，总感觉不是特别对我的审美。<del>博客不好看怎么会有动力写呢。</del> 当时有过一个念头，就是自己打造一个好看的皮肤。后来放弃了，不是我的菜。。</p>
+<p>原因有两点。其一，虽然确实有非常成熟的美化方案（awescnb，现在改名 <a href="https://github.com/guangzan/tona" target="_blank" rel="noopener noreferrer" class="">tona</a> 了，我还 fork 过这个仓库来着），但是嘛，总感觉不是特别对我的审美。<del>博客不好看怎么会有动力写呢。</del> 当时有过一个念头，就是自己打造一个好看的皮肤。后来放弃了，不是我的菜。</p>
+<div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><img decoding="async" loading="lazy" src="https://masterlazy.github.io/assets/images/2026-08-25-01-001434b98c5c797deb8f2953f994b520.png" width="1215" height="700" class="img_ev3q"></div></div>
 <p>其二，网络上有很多神奇的爬虫，整天爬爬爬，我文章刚发出来几十秒就被爬了，比如：<a href="http://www.jsqmd.com/news/4789/" target="_blank" rel="noopener noreferrer" class="">程序杂谈：概述-编程学习网</a>、<a href="http://www.jsqmd.com/news/6598/" target="_blank" rel="noopener noreferrer" class="">C++ GUI 选型记-编程学习网</a>，我真服了。</p>
 <p>所以才自己建站，有了 mNotebook。</p>
 <!-- -->
@@ -46,13 +47,23 @@
 <hr>
 <p>总之，现在的 mNotebook，越来越接近我心目中的理想样子了。</p>
 <p>但还是有点缺陷的。比如我现在编辑笔记，就要先启动 <code>yarn start</code>，然后创建 <code>.md</code>，在 Typora 中打开，再挂个浏览器，实时看效果。这么看来，要敲笔记还是比较繁琐。</p>
+<blockquote>
+<p>最近笔者弄了一个一键构建+推送脚本，体验稍微丝滑一点了。</p>
+</blockquote>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="遇到的优秀博客">遇到的优秀博客<a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#%E9%81%87%E5%88%B0%E7%9A%84%E4%BC%98%E7%A7%80%E5%8D%9A%E5%AE%A2" class="hash-link" aria-label="遇到的优秀博客的直接链接" title="遇到的优秀博客的直接链接" translate="no">​</a></h2>
 <p>网上冲浪，看到的有些博客确实很惊艳，浅浅收录到下面，可供日后借鉴。</p>
 <blockquote>
 <p>网络很大，每个人的博客感觉都像互联网的角落，可遇不可求啊。比如读到这些文字的，估计只有我自己吧。</p>
 </blockquote>
 <ul>
-<li class=""><a href="https://chai.ac.cn/" target="_blank" rel="noopener noreferrer" class="">柴扉 | CHAI</a>：很精致的博客，看出来博主也很用心地打造了博客系统。不过好像目前内容不多。</li>
+<li class="">
+<p><a href="https://chai.ac.cn/" target="_blank" rel="noopener noreferrer" class="">柴扉 | CHAI</a>：很精致的博客，看出来博主也很用心地打造了博客系统。不过好像目前内容不多。
+</p><div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><img decoding="async" loading="lazy" src="https://masterlazy.github.io/assets/images/2026-08-25-02-e7e102742997f338e84a9e21f9378ebc.jpg" width="1197" height="693" class="img_ev3q"></div></div><p></p>
+</li>
+<li class="">
+<p><a href="https://www.acofork.com/posts/" target="_blank" rel="noopener noreferrer" class="">博客 — AcoFork / AF</a>：二叉树树的博客。页面很美观，不知道为何有点明日方舟的味道。</p>
+<div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><img decoding="async" loading="lazy" src="https://masterlazy.github.io/assets/images/2026-08-25-03-85b7775f2c8c3e05395f77852615be83.jpg" width="1202" height="697" class="img_ev3q"></div></div>
+</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="写在后面">写在后面<a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2" class="hash-link" aria-label="写在后面的直接链接" title="写在后面的直接链接" translate="no">​</a></h2>
 <p>从今天开始，我也在这个小站上写博客了。相比于那些放在 <code>docs/</code> 下的笔记，博客可能没有那么精致，也不用那么多花里胡哨的组件了。</p>
