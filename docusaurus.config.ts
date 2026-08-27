@@ -91,6 +91,7 @@ const config: Config = {
                     }),
                 onUntruncatedBlogPosts: 'ignore',
                 feedOptions: {
+                    title: '悠哉法师的作品',
                     type: ['rss'],
                     limit: 20,
                     xslt: true,
