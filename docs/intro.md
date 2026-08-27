@@ -24,8 +24,6 @@ import DocCardList from '@theme/DocCardList';
 2005    化学
 2006    
 
-3001    音乐
-3002    萌物研究
 ```
 
 ---

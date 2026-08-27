@@ -88,7 +88,7 @@ const config: Config = {
                     defaultReadingTime({
                         content,
                         locale,
-                        options: { wordsPerMinute: 200 },
+                        options: { wordsPerMinute: 250 },
                     }),
                 onUntruncatedBlogPosts: 'ignore',
                 feedOptions: {

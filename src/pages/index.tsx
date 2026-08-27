@@ -22,7 +22,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className='markdown' style={{ margin: '0 1rem 3rem 1rem' }}>
+        <div className='markdown' style={{ margin: '0 0rem 3rem 0rem' }}>
           <SiteIntro />
         </div>
       </main>
