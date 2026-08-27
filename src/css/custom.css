@@ -96,8 +96,8 @@
     transform: rotate(22.5deg);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:500i,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:500i,700i&display=swap');
 
 html,
 h1,
@@ -110,11 +110,11 @@ h6,
 .footer,
 .footer__title,
 .admonitionHeading_Gvgb {
-    font-family: 'Noto Serif SC', sans-serif;
+    font-family: 'Noto Serif SC', serif;
 }
 
 em {
-    font-family: 'Noto Serif', 'Noto Serif SC', sans-serif;
+    font-family: 'Noto Serif', 'Noto Serif SC', serif;
 }
 
 h1,
@@ -157,7 +157,11 @@ body::before {
 }
 
 .footer__copyright {
-    color: var(--ifm-color-emphasis-700)
+    color: var(--ifm-color-emphasis-700);
+
+    @media(max-width: 997px) {
+        font-size: smaller;
+    }
 }
 
 /* 下拉菜单 */
@@ -234,11 +238,12 @@ li[role='tab'] {
 }
 
 h1 {
+    margin-top: 6rem;
+
     @media(min-width: 997px) {
-        margin-top: 6rem;
+        margin-bottom: 4rem;
     }
 
-    margin-bottom: 4rem;
 }
 
 h1::first-letter {
