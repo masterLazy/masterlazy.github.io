@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>masterLazy Blog</title>
+        <title>悠哉法师的作品</title>
         <link>https://masterLazy.github.io/literary</link>
         <description>masterLazy Blog</description>
         <lastBuildDate>Sun, 01 Mar 2026 00:00:00 GMT</lastBuildDate>
