@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkm_notebook=self.webpackChunkm_notebook||[]).push([["2902"],{5425(e){e.exports=JSON.parse('{"metadata":{"permalink":"/literary","page":1,"postsPerPage":10,"totalPages":1,"totalCount":8,"blogDescription":"Blog","blogTitle":"Literary"}}')}}]);

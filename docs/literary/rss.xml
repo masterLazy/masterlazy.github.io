@@ -4,11 +4,17 @@
         <title>悠哉法师的作品</title>
         <link>https://masterLazy.github.io/literary</link>
         <description>masterLazy Blog</description>
-        <lastBuildDate>Mon, 03 Aug 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 27 Aug 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
         <copyright>Copyright © 2023–2026 masterLazy</copyright>
+        <item>
+            <title><![CDATA[三人的晚宴]]></title>
+            <link>https://masterLazy.github.io/literary/2026/08/27/三人的晚宴</link>
+            <guid>https://masterLazy.github.io/literary/2026/08/27/三人的晚宴</guid>
+            <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[米格里斯]]></title>
             <link>https://masterLazy.github.io/literary/2026/08/03/米格里斯</link>
