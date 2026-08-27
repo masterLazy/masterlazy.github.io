@@ -62,13 +62,41 @@ const config: Config = {
                         type: ['rss'],
                         limit: 20,
                         xslt: true,
-                        copyright: `Copyright © ${new Date().getFullYear()} masterLazy`,
+                        copyright: `Copyright © 2025–${new Date().getFullYear()} masterLazy`,
                     },
                 },
                 theme: {
                     customCss: './src/css/custom.css',
                 },
             } satisfies Preset.Options,
+        ],
+    ],
+
+    plugins: [
+        [
+            '@docusaurus/plugin-content-blog',
+            {
+                id: 'literary',
+                routeBasePath: 'literary',
+                blogTitle: 'Literary',
+                blogSidebarTitle: '近期作品',
+                path: './literary',
+                blogSidebarCount: 20,
+                showReadingTime: true,
+                readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
+                    defaultReadingTime({
+                        content,
+                        locale,
+                        options: { wordsPerMinute: 200 },
+                    }),
+                onUntruncatedBlogPosts: 'ignore',
+                feedOptions: {
+                    type: ['rss'],
+                    limit: 20,
+                    xslt: true,
+                    copyright: `Copyright © 2023–${new Date().getFullYear()} masterLazy`,
+                },
+            },
         ],
     ],
 
@@ -85,6 +113,7 @@ const config: Config = {
                 },
                 { to: '/docs/jot/intro', label: '随笔', },
                 { to: 'blog', label: '博客' },
+                { to: 'literary', label: '文学', },
                 {
                     type: 'dropdown',
                     label: '计算机科学',
@@ -118,20 +147,6 @@ const config: Config = {
                     ],
                 },
                 {
-                    type: 'dropdown',
-                    label: '艺术',
-                    items: [
-                        {
-                            to: '/docs/moe/intro',
-                            label: '萌物研究',
-                        },
-                        {
-                            to: '/docs/music/intro',
-                            label: '音乐',
-                        },
-                    ],
-                },
-                {
                     href: 'https://masterlazy.github.io/blog/rss',
                     position: 'right',
                     className: 'header-link header-rss-link',
@@ -154,12 +169,12 @@ const config: Config = {
                             to: '/docs/intro',
                         },
                         {
-                            label: '标签列表',
-                            to: '/docs/tags',
+                            label: '订阅博客',
+                            to: 'https://masterLazy.github.io/blog/rss.xml'
                         },
                         {
-                            label: '订阅 RSS',
-                            to: 'https://masterLazy.github.io/blog/rss.xml'
+                            label: '订阅文学',
+                            to: 'https://masterLazy.github.io/literary/rss.xml'
                         }
                     ],
                 },
@@ -190,7 +205,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `© ${new Date().getFullYear()} masterLazy · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
+            copyright: `© 2023–${new Date().getFullYear()} masterLazy · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
         },
         prism: {
             theme: prismThemes.oneLight,

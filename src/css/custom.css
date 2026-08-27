@@ -27,6 +27,7 @@
 
     --ifm-footer-background-color: #eef2f7;
     --ifm-background-color: #f4f6f9;
+    --ifm-font-color-base: #111111;
 
     --ifm-color-primary-pale: #96ccff;
     --ifm-color-primary-paler: #cbe6ff;
@@ -51,6 +52,7 @@
 
     --ifm-footer-background-color: #1b1b1d;
     --ifm-background-color: #1b1b1d;
+    --ifm-font-color-base: var(--ifm-color-emphasis-900);
 
     --ifm-color-primary-pale: #2e5b85;
     --ifm-color-primary-paler: #20405d;
@@ -94,8 +96,8 @@
     transform: rotate(22.5deg);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400i,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:500i,800i&display=swap');
 
 html,
 h1,
@@ -108,11 +110,11 @@ h6,
 .footer,
 .footer__title,
 .admonitionHeading_Gvgb {
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Serif SC', sans-serif;
 }
 
 em {
-    font-family: 'Noto Sans', 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Serif', 'Noto Serif SC', sans-serif;
 }
 
 h1,
@@ -124,7 +126,13 @@ h6 {
     color: var(--mlazy-header-color);
 }
 
-/* 美丽的背景（好有AI味） */
+p {
+    @media(min-width: 997px) {
+        font-size: 16.5px;
+    }
+}
+
+/* 美丽的背景（有点AI味） */
 body::before {
     content: '';
     position: fixed;
@@ -208,7 +216,7 @@ li[role='tab'] {
     max-width: var(--mlazy-article-max-width);
     border: var(--ifm-color-emphasis-300) solid 1px;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
     margin-bottom: -2rem;
 
     @media(min-width: 997px) {
@@ -250,11 +258,13 @@ hr {
 
 .markdown>blockquote {
     border-left-width: 4px;
+    color: var(--ifm-color-emphasis-700);
 }
 
 /* 美丽的选中效果 */
 ::selection {
-    background-color: var(--ifm-color-primary-paler);
+    background-color: var(--mlazy-header-color);
+    color: var(--mlazy-article-color);
 }
 
 /*
@@ -283,4 +293,10 @@ hr {
         grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
         gap: 1rem;
     }
+}
+
+/* 带缩进的文本 */
+.with-indent p {
+    text-indent: 2em;
+    /* 中文标准缩进两个字 */
 }

@@ -1,3 +1,9 @@
+---
+tags: [csharp, java, ramble]
+---
+
+
+
 # C# vs Java
 
 Java 和 C# 真是有非常微妙的差异。

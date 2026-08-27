@@ -1,26 +1,29 @@
 c-cpp:
-  label: ' C/C++ '
+  label: 'C/C++'
 
 csharp:
-  label: ' C# '
+  label: 'C#'
+
+java:
+  label: 'Java'
 
 dotnet:
-  label: ' .NET '
+  label: '.NET'
 
 python:
-  label: ' Python '
+  label: 'Python'
 
 network:
-  label: ' 网络 '
+  label: '网络'
 
 standard:
-  label: ' 强迫症 '
+  label: '强迫症'
 
 stack:
-  label: ' 技术栈（技术选型） '
+  label: '技术栈（技术选型）'
 
 ramble:
-  label: ' 碎碎念 '
+  label: '碎碎念'
 
 unfinished:
   label: '.未完待续'

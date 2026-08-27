@@ -15,7 +15,6 @@ import type { MDXComponentsObject } from '@theme/MDXComponents';
 
 /* Components by mLazy */
 import ColorDot from '@site/src/components/ColorDot'
-import Highlight from '@site/src/components/Highlight'
 import Img from '@site/src/components/Img'
 
 import ProblemInfoCard from '@site/src/components/ProblemInfoCard'
@@ -42,7 +41,6 @@ const MDXComponents: MDXComponentsObject = {
 
   /* Components by mLazy */
   ColorDot,
-  Highlight,
   Img,
 
   ProblemInfoCard,
