@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkm_notebook=self.webpackChunkm_notebook||[]).push([["5866"],{4686(e){e.exports=JSON.parse('{"tags":[{"label":"\u5BD3\u8A00","permalink":"/literary/tags/\u5BD3\u8A00","count":1}]}')}}]);
