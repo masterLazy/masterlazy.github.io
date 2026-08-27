@@ -8,7 +8,7 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>zh-Hans</language>
-        <copyright>Copyright © 2026 masterLazy</copyright>
+        <copyright>Copyright © 2025–2026 masterLazy</copyright>
         <item>
             <title><![CDATA[2026 年的一点博客心得]]></title>
             <link>https://masterLazy.github.io/blog/2026/08/25/2026年的一点博客心得</link>
@@ -54,6 +54,9 @@
 </blockquote>
 <ul>
 <li class="">
+<p><a href="https://thiscute.world/" target="_blank" rel="noopener noreferrer" class="">This Cute World</a>：有深度、有思考的博文。</p>
+</li>
+<li class="">
 <p><a href="https://chai.ac.cn/" target="_blank" rel="noopener noreferrer" class="">柴扉 | CHAI</a>：很精致的博客，看出来博主也很用心地打造了博客系统。不过好像目前内容不多。
 </p><div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><img decoding="async" loading="lazy" src="https://masterlazy.github.io/assets/images/2026-08-25-02-b2096c5a23340dc3ad871fe63e6b48d6.jpg" width="1288" height="704" class="img_ev3q"></div></div><p></p>
 </li>
@@ -74,7 +77,7 @@
 </li>
 </ol>
 </section>]]></content:encoded>
-            <category> 碎碎念 </category>
+            <category>碎碎念</category>
         </item>
         <item>
             <title><![CDATA[C# vs Java]]></title>
@@ -91,6 +94,9 @@
 <hr>
 <p>总之感觉 Java 虽然历史包袱有点沉，但是设计似乎比较优雅；C# 固然简洁，但也有点接近 C++，有种奇怪的语法丰富但是容易写成史山的感觉。</p>
 ]]></content:encoded>
+            <category>C#</category>
+            <category>Java</category>
+            <category>碎碎念</category>
         </item>
         <item>
             <title><![CDATA[谈谈「语言硅基化」]]></title>
@@ -189,9 +195,9 @@
 </ul>
 <p>…但总不是很满意。后来我认定了，用 C++ 开发 GUI 注定是痛苦的。</p>
 <p>后来我又探索了 Dart（写了代码）、C#（写了代码）、Java（没写代码）的 GUI，后来选定了 C# + WPF 的方案。目前来说，这仍是我采用的技术栈。</p>]]></content:encoded>
-            <category> C/C++ </category>
-            <category> 技术栈（技术选型） </category>
-            <category> 碎碎念 </category>
+            <category>C/C++</category>
+            <category>技术栈（技术选型）</category>
+            <category>碎碎念</category>
         </item>
         <item>
             <title><![CDATA[写 C# 有感]]></title>
@@ -207,6 +213,9 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="配套设施">配套设施<a href="https://masterlazy.github.io/blog/2025/09/07/%E5%86%99csharp%E6%9C%89%E6%84%9F#%E9%85%8D%E5%A5%97%E8%AE%BE%E6%96%BD" class="hash-link" aria-label="配套设施的直接链接" title="配套设施的直接链接" translate="no">​</a></h3>
 <p>还有配套的丰富的 .NET SDK ，比 C++ 的标准库强太多了。很多轮子即拆即用，非常方便。尤其在文件操作、网络操作、序列化这些，非常方便。而且.NET各组件涵盖前后端，所以用 C# 做全栈开发简直是丝滑无比。相比之下C++的标准库，还有什么WindowsAPI，就显得很笨拙。</p>
 ]]></content:encoded>
+            <category>C#</category>
+            <category>C/C++</category>
+            <category>碎碎念</category>
         </item>
         <item>
             <title><![CDATA[上古笔记本电脑维修记]]></title>
