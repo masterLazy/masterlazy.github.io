@@ -26,6 +26,7 @@
 </ul>
 </blockquote>
 <p>现在看来，还有一点，就是在信息海洋中提炼一点精华。虽然这点精华估计都要被喂给 AI 了吧，但是确实是自己的一点小天地，这里的文章都是可靠、精心编写的。</p>
+<!-- -->
 <blockquote>
 <p>还有一点，就是当时 OI 要写题解，但是洛谷题解区一般都关了，洛谷博客也不是很好看，所以打算把题解之类的当博客写。</p>
 </blockquote>
@@ -35,7 +36,6 @@
 <div class="imageContainer_wBRv" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><div class="imageWrapper_bNQ4" style="--mlazy-img-max-height:23rem;--mlazy-img-dark-filter:brightness(0.89);--mlazy-img-border:var(--ifm-color-emphasis-300) solid 1px;--mlazy-img-border-radius:var(--ifm-global-radius)"><img decoding="async" loading="lazy" src="https://masterlazy.github.io/assets/images/2026-08-25-01-5b9f776dd246b57b01b2fa7c7ceabce4.png" width="1284" height="701" class="img_ev3q"></div></div>
 <p>其二，网络上有很多神奇的爬虫，整天爬爬爬，我文章刚发出来几十秒就被爬了，比如：<a href="http://www.jsqmd.com/news/4789/" target="_blank" rel="noopener noreferrer" class="">程序杂谈：概述-编程学习网</a>、<a href="http://www.jsqmd.com/news/6598/" target="_blank" rel="noopener noreferrer" class="">C++ GUI 选型记-编程学习网</a>，我真服了。</p>
 <p>所以才自己建站，有了 mNotebook。</p>
-<!-- -->
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="一路走来的-mnotebook">一路走来的 mNotebook<a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#%E4%B8%80%E8%B7%AF%E8%B5%B0%E6%9D%A5%E7%9A%84-mnotebook" class="hash-link" aria-label="一路走来的 mNotebook的直接链接" title="一路走来的 mNotebook的直接链接" translate="no">​</a></h2>
 <p>我的博客用的是 Docusaurus<sup><a href="https://masterlazy.github.io/blog/2026/08/25/2026%E5%B9%B4%E7%9A%84%E4%B8%80%E7%82%B9%E5%8D%9A%E5%AE%A2%E5%BF%83%E5%BE%97#user-content-fn-1-c004f0" id="user-content-fnref-1-c004f0" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>，这个选型好像比较少见。 Docusaurus 似乎比较常用于做技术文档之类的吧。选 Docusaurus 是因为开发这个的公司是 Facebook 母公司，比较靠谱，感觉会长期支持。</p>
 <p>初看 Docusaurus，外观是不太好的。但是 Docusaurus 基于 React，React 就很有可玩性了。参看 <a class="" href="https://masterlazy.github.io/docs/jot/mnotebook">关于 mNotebook</a>，有很大的自定义空间。所以才有了你现在看到的 mNotebook 的样子，我觉得是非常养眼的。当时我刚刚学会给 Docusaurus 写自定义组件时，开心坏了，<del>整了一大堆花里胡哨的组件</del>。后来稍微收敛一点了。毕竟笔记 / 博客这东西，还是内容大于形式的。况且用了一堆 Markdown 之外的东西，如果未来要迁移什么的，很麻烦啊。</p>
