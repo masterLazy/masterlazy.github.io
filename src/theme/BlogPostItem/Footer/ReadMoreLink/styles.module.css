@@ -1,0 +1,11 @@
+.b {
+    border-bottom: var(--ifm-color-primary-pale) dashed 2px;
+}
+
+.b:hover {
+    border-bottom: var(--ifm-color-primary-pale) solid 2px;
+}
+
+.link:hover {
+    text-decoration: none;
+}

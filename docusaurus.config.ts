@@ -50,7 +50,7 @@ const config: Config = {
                 },
                 blog: {
                     tags: '../tags.yml',
-                    blogSidebarCount: 20,
+                    blogSidebarCount: 10,
                     showReadingTime: true,
                     readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
                         defaultReadingTime({
@@ -60,10 +60,11 @@ const config: Config = {
                         }),
                     feedOptions: {
                         type: ['rss'],
-                        limit: 20,
+                        limit: 10,
                         xslt: true,
                         copyright: `Copyright © 2025–${new Date().getFullYear()} masterLazy`,
                     },
+                    onInlineAuthors: 'ignore',
                 },
                 theme: {
                     customCss: './src/css/custom.css',
@@ -81,7 +82,7 @@ const config: Config = {
                 blogTitle: 'Literary',
                 blogSidebarTitle: '近期作品',
                 path: './literary',
-                blogSidebarCount: 20,
+                blogSidebarCount: 10,
                 showReadingTime: true,
                 readingTime: ({ content, locale, frontMatter, defaultReadingTime }) =>
                     defaultReadingTime({
@@ -93,10 +94,11 @@ const config: Config = {
                 feedOptions: {
                     title: '悠哉法师的作品',
                     type: ['rss'],
-                    limit: 20,
+                    limit: 10,
                     xslt: true,
                     copyright: `Copyright © 2023–${new Date().getFullYear()} masterLazy`,
                 },
+                onInlineAuthors: 'ignore',
             },
         ],
     ],

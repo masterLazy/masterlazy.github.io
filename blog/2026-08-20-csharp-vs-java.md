@@ -1,8 +1,7 @@
 ---
-tags: [csharp, java, ramble]
+tags: [ csharp, java, ramble ]
+author: 悠哉法师
 ---
-
-
 
 # C# vs Java
 

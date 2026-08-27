@@ -35,7 +35,7 @@
     --mlazy-header-color: #303538;
     --mlazy-article-color: #fcfcfd;
 
-    --mlazy-article-max-width: 950px;
+    --mlazy-article-max-width: 930px;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -57,7 +57,7 @@
     --ifm-color-primary-pale: #2e5b85;
     --ifm-color-primary-paler: #20405d;
 
-    --mlazy-header-color: #d5dfe6;
+    --mlazy-header-color: #d5dbe6;
     --mlazy-article-color: #262629;
 }
 
@@ -106,6 +106,7 @@ h3,
 h4,
 h5,
 h6,
+span,
 .body,
 .footer,
 .footer__title,
@@ -145,7 +146,7 @@ body::before {
     z-index: -1;
 
     background:
-        radial-gradient(circle at 80% 90%, rgba(249, 212, 35, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 80% 90%, rgba(249, 212, 35, 0.07) 0%, transparent 20%),
         radial-gradient(circle at 20% 30%, color-mix(in srgb, var(--ifm-color-primary), transparent 95%) 0%, transparent 30%),
         var(--ifm-background-color);
 }
@@ -246,9 +247,8 @@ h1 {
 
 }
 
-h1::first-letter {
-    color: var(--ifm-color-primary);
-    font-size: 120%;
+.markdown>h1 {
+    font-weight: normal;
 }
 
 .markdown>h2 {
@@ -270,6 +270,11 @@ hr {
 ::selection {
     background-color: var(--mlazy-header-color);
     color: var(--mlazy-article-color);
+}
+
+/* 博文作者 */
+.authorName_yefp {
+    font-size: 1rem;
 }
 
 /*
@@ -303,5 +308,10 @@ hr {
 /* 带缩进的文本 */
 .with-indent p {
     text-indent: 2em;
-    /* 中文标准缩进两个字 */
+    margin-bottom: 0.5rem;
+}
+
+.with-indent hr {
+    margin-left: 4em;
+    margin-right: 4em;
 }
