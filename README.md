@@ -1,6 +1,6 @@
 # 📚 mNotebook
 
-我的的赛博笔记本。所有笔记以 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可，组件以 Apache License 2.0 许可。
+我的的赛博笔记本。所有文章以 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) 许可，组件以 Apache License 2.0 许可。
 
 ## 安装依赖
 

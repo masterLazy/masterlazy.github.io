@@ -16,8 +16,6 @@
 
 我的文学作品。
 
-**注意：** 这里的内容采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/'>CC BY-NC-ND 4.0</a>（署名—非商业性使用—禁止演绎 4.0 协议国际版）公开许可。
-
 
 
 ## 笔记本列表
@@ -34,4 +32,4 @@
 
 ---
 
-如无特殊说明，本站中的内容采用 <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>（署名—非商业性使用—相同方式共享 4.0 协议国际版）公开许可。笔记中的一些也曾在 Cnblog、Bilibilli、Luogu 发布，我把它们搬到这里了。
+如无特殊说明，本站中的内容采用 <a href='https://creativecommons.org/licenses/by-nc-nd/4.0/'>CC BY-NC-ND 4.0</a>（署名—非商业性使用—禁止演绎 4.0 协议国际版）公开许可。笔记中的一些也曾在 Cnblog、Bilibilli、Luogu 发布，我把它们搬到这里了。

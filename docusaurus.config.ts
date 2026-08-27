@@ -205,7 +205,7 @@ const config: Config = {
                     ],
                 },
             ],
-            copyright: `© 2023–${new Date().getFullYear()} masterLazy · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>`,
+            copyright: `© 2023–${new Date().getFullYear()} masterLazy · Built with Docusaurus · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>`,
         },
         prism: {
             theme: prismThemes.oneLight,
