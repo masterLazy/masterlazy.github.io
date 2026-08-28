@@ -56,7 +56,7 @@
 <p>谢陨石：编程是上大学时就有的爱好。在 AI 时代，只需要提供思路并搭建好框架，由 AI 协助规划方案，再逐步微调实施就行。</p>
 </blockquote>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="我的经历">我的经历<a href="https://masterlazy.github.io/blog/2026/08/28/%E5%85%B3%E4%BA%8E%E5%B7%A5%E5%85%B7%E7%9A%84%E6%80%9D%E8%80%83#%E6%88%91%E7%9A%84%E7%BB%8F%E5%8E%86" class="hash-link" aria-label="我的经历的直接链接" title="我的经历的直接链接" translate="no">​</a></h3>
-<p>制造工具是快乐的。和写作、绘画等创作不同，创造一个工具软件，是在创造一件会反复使用、反复使你受益、“跑”起来的东西，<strong>成就感</strong>是很强的。</p>
+<p>制造工具是快乐的。和写作、绘画等创作不同，创造一个工具软件，是在创造一件会反复使用、反复使你受益、“跑”起来的实体，<strong>成就感</strong>是很强的。</p>
 <p><strong>如果做一件事有成就感，那么你就有继续做下去的动力。</strong></p>
 <p>笔者用 AI 创造的第一款工具是 <a href="https://github.com/masterLazy/Collect" target="_blank" rel="noopener noreferrer" class="">Collect</a>，这是一个我用来管理美术参考图的工具。参考图管理，自然有现成的软件：付费的 Eagle、免费的 Billfish。笔者想直接用文件名存储标签信息，不依赖额外的数据，这样笔者的素材库就不会和某个特定软件绑定，更省心一点。然而，这样的需求确实比较稀奇（虽然抖抖村推荐这么干），据笔者的调查没有什么软件能做到这样。所以笔者就转向了 AI。</p>
 <p>AI 打造的工具令笔者很满意。沉浸于喜悦中的笔者转换了心态：过去是犹豫于要不要向软件厂家妥协，此刻却用着自己所造之物“无所不能”；笔者开始不断给这个软件挑刺，精益求精。后来为了让 AI 能更好地调试前端界面，笔者甚至又让 AI 做了一个 MCP 插件：<a href="https://github.com/masterLazy/ollama-vision-mcp" target="_blank" rel="noopener noreferrer" class="">ollama-vision-mcp</a>。但后来其实没有帮助太多。</p>
