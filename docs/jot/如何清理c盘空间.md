@@ -31,12 +31,12 @@ temp: D:\NuGet\NuGetScratch
 plugins-cache: D:\NuGet\plugins-cache
 ```
 
-| 文件夹            | 用途                                                         | 环境变量                       |
-| ----------------- | ------------------------------------------------------------ | ------------------------------ |
-| `http-cache`      | Visual Studio 包管理器 (NuGet 3.x+) 和 `dotnet` 工具存储此缓存中下载包的副本（另存为 `.dat` 文件），这些副本被组织到每个包源的子文件夹中。 未展开包，且缓存中有 30 分钟的到期时间。 | **`NUGET_HTTP_CACHE_PATH`**    |
-| `global-packages` | NuGet 安装任何下载包的位置。                                 | **`NUGET_PACKAGES`**           |
-| `temp`            | NuGet 在各操作期间在其中存储临时文件的文件夹。               | **`NUGET_SCRATCH`**            |
-| `plugins-cache`   | NuGet 存储来自操作声明请求的结果的文件夹。                   | **`NUGET_PLUGINS_CACHE_PATH`** |
+| 文件夹            | 用途                                                         | 环境变量                   |
+| ----------------- | ------------------------------------------------------------ | -------------------------- |
+| `http-cache`      | Visual Studio 包管理器 (NuGet 3.x+) 和 `dotnet` 工具存储此缓存中下载包的副本（另存为 `.dat` 文件），这些副本被组织到每个包源的子文件夹中。 未展开包，且缓存中有 30 分钟的到期时间。 | `NUGET_HTTP_CACHE_PATH`    |
+| `global-packages` | NuGet 安装任何下载包的位置。                                 | `NUGET_PACKAGES`           |
+| `temp`            | NuGet 在各操作期间在其中存储临时文件的文件夹。               | `NUGET_SCRATCH`            |
+| `plugins-cache`   | NuGet 存储来自操作声明请求的结果的文件夹。                   | `NUGET_PLUGINS_CACHE_PATH` |
 
 如果要更改缓存位置，只需要再系统设置内创建上述四个**环境变量**，填入新的缓存位置即可。如果需要，还可以把旧的缓存的文件分别粘贴到新位置。
 

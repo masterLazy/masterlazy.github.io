@@ -1,0 +1,4 @@
+.header {
+    background-color: var(--ifm-footer-background-color);
+    border-bottom: var(--ifm-color-emphasis-300) solid 1px;
+}
