@@ -132,12 +132,6 @@ h6 {
     color: var(--mlazy-header-color);
 }
 
-p {
-    @media(min-width: 997px) {
-        font-size: 16.5px;
-    }
-}
-
 /* 博文作者 */
 .authorName_yefp {
     font-size: 1rem;
@@ -253,10 +247,16 @@ li[role='tab'] {
 h1 {
     margin-top: 6rem;
 
-    @media(min-width: 997px) {
+    @media(min-width: 930px) {
         margin-bottom: 4rem;
     }
 
+}
+
+p {
+    @media(min-width: 930px) {
+        font-size: 16.5px;
+    }
 }
 
 .markdown>h1 {

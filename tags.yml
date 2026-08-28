@@ -25,6 +25,9 @@ stack:
 ramble:
   label: '碎碎念'
 
+deep-think:
+  label: '深度思考'
+
 unfinished:
   label: '.未完待续'
   description: '有朝一日会写完吗？'

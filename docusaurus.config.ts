@@ -213,7 +213,7 @@ const config: Config = {
         prism: {
             theme: prismThemes.oneLight,
             darkTheme: prismThemes.oneDark,
-            additionalLanguages: ['java', 'csharp', 'bash'],
+            additionalLanguages: ['java', 'csharp', 'bash', 'batch'],
         },
         sidebar: {
             autoCollapseCategories: true,
