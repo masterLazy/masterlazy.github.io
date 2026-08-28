@@ -152,6 +152,6 @@ Docusaurus 的主题我并不是很喜欢，所以我通过各种方式自定义
 
 通过修改 `custom.css`：
 
-- 通过 fonts.googleapis.com 使用自定义字体。
+- 通过 fonts.googleapis.com 使用自定义字体。*When display words in `<em>`, use italic font.*
 - 修改了导航栏下拉菜单的样式。
 - 修复了[所有标签页面](/docs/tags)在深色模式下的表现。

@@ -43,7 +43,7 @@ Some **content** with _Markdown_ `syntax`. Check [this `api`](#).
 
 总共有 `note`、`tip`、`info`、`warning`、`danger`。告示可以嵌套。
 
-## 更好看的 `<details>`
+## 更好看的  \<details\>
 
 笔者 swizzle 了这个组件：[关于mNotebook](./mnotebook#文档中)。
 

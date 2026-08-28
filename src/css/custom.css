@@ -21,7 +21,9 @@
     --ifm-color-primary-light: #46a0d9;
     --ifm-color-primary-lighter: #51a6dc;
     --ifm-color-primary-lightest: #71b6e2;
+    /* 在标签列表页使用 */
     --ifm-color-secondary: #ebedf0;
+    --ifm-color-secondary-contrast-background: #f4f6f9;
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 
@@ -48,6 +50,7 @@
     --ifm-color-primary-lighter: #96ccff;
     --ifm-color-primary-lightest: #cbe6ff;
     --ifm-color-secondary: #313131;
+    --ifm-color-secondary-contrast-background: #474748;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 
     --ifm-footer-background-color: #1b1b1d;
@@ -99,6 +102,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:500i,700i&display=swap');
 
+/* 不要直接选择 <span> */
 html,
 h1,
 h2,
@@ -106,14 +110,15 @@ h3,
 h4,
 h5,
 h6,
-span,
 .body,
 .footer,
 .footer__title,
-.admonitionHeading_Gvgb {
+.admonitionHeading_Gvgb,
+.authorName_yefp {
     font-family: 'Noto Serif SC', serif;
 }
 
+/* 斜体使用意大利体 */
 em {
     font-family: 'Noto Serif', 'Noto Serif SC', serif;
 }
@@ -131,6 +136,11 @@ p {
     @media(min-width: 997px) {
         font-size: 16.5px;
     }
+}
+
+/* 博文作者 */
+.authorName_yefp {
+    font-size: 1rem;
 }
 
 /* 美丽的背景（有点AI味） */
@@ -270,11 +280,6 @@ hr {
 ::selection {
     background-color: var(--mlazy-header-color);
     color: var(--mlazy-article-color);
-}
-
-/* 博文作者 */
-.authorName_yefp {
-    font-size: 1rem;
 }
 
 /*
