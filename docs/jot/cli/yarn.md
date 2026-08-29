@@ -5,52 +5,37 @@ Yarn 是 Facebook 发布的一款取代 npm 的 Node.js 包管理工具，也是
 ## 安装 & 卸载 Yarn
 
 ```bash
-# 安装
-npm install -g yarn
-
-# 卸载
-npm uninstall -g yarn
+npm install -g yarn      # 安装
+npm uninstall -g yarn    # 卸载
 ```
 
 ## 安装依赖
 
 ```bash
-# 安装依赖包
-yarn
-yarn install
-
-# 强制重新下载依赖包
-yarn install --force
+yarn                   # 安装依赖包
+yarn install --force    # 强制重新下载依赖包
 ```
 
 ## 管理依赖
 
 ```bash
-# 添加指定的依赖包
-yarn add <pkg-name>
-
-# 添加依赖包 (全局)
-yarn global add <pkg-name>
+yarn add <package>           # 添加指定的依赖包
+yarn global add <package>    # 添加依赖包 (全局)
 ```
 
 ```bash
-# 移除指定的依赖包
-yarn remove <pkg-name>
-
-# 移除依赖包 (全局)
-yarn global remove <pkg-name>
+yarn remove <package>           # 移除指定的依赖包
+yarn global remove <package>    # 移除依赖包 (全局)
 ```
 
 ```bash
-# 更新指定的依赖包
-yarn upgrade <pkg-name>
+yarn upgrade <package>    # 更新指定的依赖包
 ```
 
 ## 构建
 
 ```bash
-# 构建项目
-yarn build
+yarn build    # 构建项目
 ```
 
 ## 启动

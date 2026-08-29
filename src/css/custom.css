@@ -221,6 +221,8 @@ li[role='tab'] {
 
 /* 文章 */
 .markdown {
+    --ifm-h3-vertical-rhythm-top: 1;
+
     background-color: var(--mlazy-article-color);
     max-width: var(--mlazy-article-max-width);
     border: var(--ifm-color-emphasis-300) solid 1px;
@@ -246,11 +248,6 @@ li[role='tab'] {
 
 h1 {
     margin-top: 6rem;
-
-    @media(min-width: 930px) {
-        margin-bottom: 4rem;
-    }
-
 }
 
 p {
