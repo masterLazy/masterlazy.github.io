@@ -1,71 +1,70 @@
 @echo off
-chcp 65001 >nul
 
 set mainPath=%~dp0
 set buildPath=%~dp0../masterlazy.github.io-build
 
-set /p message=输入更新信息：
+set /p message=Enter update message: 
 
 
 echo.
-echo * Task: 提交源分支更改
+echo * Task: Push branch 'main'
 for /f %%i in ('git rev-parse HEAD') do set "mainLastCommit=%%i"
 call git add . || goto :error
 call git commit -m "%message%" || goto :error
-call git push --force-with-lease || goto :rollbackMain
-echo 已推送源分支
+call git push origin --force-with-lease || goto :rollbackMain
+echo Pushed main to origin/main.
 
 echo.
-echo * Task: 构建 Docusaurus
+echo * Task: Build Docusaurus
 call yarn build || goto :rollbackMain
-echo 构建完成
+echo Built Docusaurus.
 
 echo.
-echo * Task: 更新构建分支
+echo * Task: Copy build result to branch 'build'
 call robocopy "build" "%buildPath%/docs" /MIR /NFL /NDL /NJH
-:: robocopy 的返回值比较奇葩
+:: robocopy's return value is kind of special
 if %errorlevel% geq 4 (
     goto :rollbackMain
 )
-echo 已更新构建分支
+echo Copied build result.
 
 cd "%buildPath%"
 
 echo.
-echo * Task: 提交构建分支更改
+echo * Task: Push branch 'build'
 for /f %%i in ('git rev-parse HEAD') do set "buildLastCommit=%%i"
 call git add . || goto :rollbackMain
 call git commit -m "%message%" || goto :rollbackMain
-call git push --force-with-lease || goto :rollbackBoth
-echo 已推送构建分支
+call git push origin --force-with-lease || goto :rollbackBoth
+echo Pushed build to origin/build.
 
 goto :success
 
 :rollbackBoth
 echo.
-echo * Compensate: 回滚构建分支更改
+echo * Compensate: Reset commit on branch 'build'
 cd "%buildPath%"
 call git reset --soft %buildLastCommit% || goto :rollbackMain
-echo 已回滚到 %buildLastCommit%
+echo Reset build to %buildLastCommit%.
 
 :rollbackMain
 echo.
-echo * Compensate: 回滚主分支更改
+echo * Compensate: Reset commit on branch 'main'
 cd "%mainPath%"
 call git reset --soft %mainLastCommit% || goto :error
-echo 已回滚到 %mainLastCommit%
+echo Reset main to %mainLastCommit%
 goto :error
 
 :success
 echo.
-echo 任务完成
+echo Done.
 cd "%mainPath%"
 pause
 exit /b
 
 :error
 echo.
-echo 任务异常结束
+echo Error: Task finished with exception.
 cd "%mainPath%"
 pause
 exit /b
