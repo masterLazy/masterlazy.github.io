@@ -6,6 +6,8 @@ import TagsListInline from '@theme/TagsListInline';
 
 import EditMetaRow from '@theme/EditMetaRow';
 
+import styles from './styles.module.css'
+
 export default function DocItemFooter(): ReactNode {
   const { metadata } = useDoc();
   const { editUrl, lastUpdatedAt, lastUpdatedBy, tags } = metadata;
@@ -20,8 +22,7 @@ export default function DocItemFooter(): ReactNode {
   }
 
   return (
-    <footer style={{ display: 'grid', gridTemplateColumns: '2fr 3fr', maxWidth: 'var(--mlazy-article-max-width)' }}
-      className={clsx(ThemeClassNames.docs.docFooter, 'docusaurus-mt-lg')}>
+    <footer className={styles.footer}>
       <div>
         {canDisplayTagsRow && (
           <div

@@ -115,8 +115,8 @@ tags: [ ramble ]
     ![](/img/favicon.webp)
 
     这是**图片注释**\
-    注释里面可以自由使用 $\text{Markdown}$ 语法\
-    文字是左对齐的，这别有韵味。
+    注释里面可以自由使用 Markdown 语法\
+    文字是左对齐的，别有一番韵味。
     </Img>
 </div>
 ```
@@ -126,8 +126,8 @@ tags: [ ramble ]
     ![](/img/favicon.webp)
 
     这是**图片注释**\
-    注释里面可以自由使用 $\text{Markdown}$ 语法\
-    文字是左对齐的，这别有韵味。
+    注释里面可以自由使用 Markdown 语法\
+    文字是左对齐的，别有一番韵味。
     </Img>
 </div>
 

@@ -1,0 +1,9 @@
+.footer {
+    margin-top: 1rem;
+    max-width: var(--mlazy-article-max-width);
+
+    @media(min-width: 997px) {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+    }
+}
