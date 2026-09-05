@@ -249,11 +249,11 @@ h1 {
     margin-top: 6rem;
 }
 
-/*p {
-    @media(min-width: 997px) {
-        font-size: 16.5px;
+p {
+    @media(max-width: 930px) {
+        font-size: 95%;
     }
-}*/
+}
 
 .markdown>h1 {
     font-weight: normal;
