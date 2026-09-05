@@ -25,6 +25,9 @@ stack:
 ramble:
   label: '碎碎念'
 
+liminal:
+  label: '阈限空间'
+
 deep-think:
   label: '深度思考'
 
