@@ -57,8 +57,8 @@
     --ifm-background-color: #1b1b1d;
     --ifm-font-color-base: var(--ifm-color-emphasis-900);
 
-    --ifm-color-primary-pale: #2e5b85;
-    --ifm-color-primary-paler: #20405d;
+    --ifm-color-primary-pale: #3c6892;
+    --ifm-color-primary-paler: #2e5b85;
 
     --mlazy-header-color: #d5dbe6;
     --mlazy-article-color: #262629;
@@ -99,8 +99,8 @@
     transform: rotate(22.5deg);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:500,700&subset=chinese-simplified&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:500i,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,500,700&subset=chinese-simplified&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400i,500i,700i&display=swap');
 
 /* 不要直接选择 <span> */
 html,
@@ -116,6 +116,10 @@ h6,
 .admonitionHeading_Gvgb,
 .authorName_yefp {
     font-family: 'Noto Serif SC', serif;
+}
+
+[data-theme='light'] {
+    font-weight: 500;
 }
 
 /* 斜体使用意大利体 */
@@ -219,6 +223,17 @@ li[role='tab'] {
     border-radius: 0;
 }
 
+
+h1 {
+    margin-top: 6rem;
+}
+
+p {
+    @media(max-width: 930px) {
+        font-size: 95%;
+    }
+}
+
 /* 文章 */
 .markdown {
     --ifm-h3-vertical-rhythm-top: 1;
@@ -245,16 +260,6 @@ li[role='tab'] {
     }
 }
 
-h1 {
-    margin-top: 6rem;
-}
-
-p {
-    @media(max-width: 930px) {
-        font-size: 95%;
-    }
-}
-
 .markdown>h1 {
     font-weight: normal;
 }
@@ -268,6 +273,19 @@ p {
     height: 2px;
 }
 
+.markdown strong {
+    background-image: linear-gradient(color-mix(in srgb, currentColor 15%, transparent),
+            color-mix(in srgb, currentColor 15%, transparent));
+
+    background-size: 100% calc(100% - 10px);
+    background-position: left bottom 0px;
+    background-repeat: no-repeat;
+}
+
+[data-theme='dark'] .markdown strong {
+    background-image: linear-gradient(color-mix(in srgb, currentColor 25%, transparent),
+            color-mix(in srgb, currentColor 25%, transparent));
+}
 
 .markdown>blockquote {
     border-left-width: 4px;
