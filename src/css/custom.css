@@ -38,6 +38,10 @@
     --mlazy-article-color: #fafafb;
 
     --mlazy-article-max-width: 930px;
+
+    @media(max-width: 930px) {
+        font-size: 95%;
+    }
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -119,7 +123,9 @@ h6,
 }
 
 [data-theme='light'] {
-    font-weight: 500;
+    @media screen {
+        font-weight: 500;
+    }
 }
 
 /* 斜体使用意大利体 */
@@ -223,73 +229,74 @@ li[role='tab'] {
     border-radius: 0;
 }
 
+/* 文章 */
 
 h1 {
     margin-top: 6rem;
 }
 
-p {
-    @media(max-width: 930px) {
-        font-size: 95%;
+@media screen {
+    .markdown {
+        --ifm-h3-vertical-rhythm-top: 1;
+
+        background-color: var(--mlazy-article-color);
+        max-width: var(--mlazy-article-max-width);
+        border: var(--ifm-color-emphasis-300) solid 1px;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+
+        @media(min-width: 930px) {
+            border-radius: 16px;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+
+        @media(max-width: 930px) {
+            padding-left: 1.5rem;
+            margin-left: -1rem;
+            padding-right: 1.5rem;
+            margin-right: -1rem;
+            border-left: 0;
+            border-right: 0;
+        }
     }
-}
 
-/* 文章 */
-.markdown {
-    --ifm-h3-vertical-rhythm-top: 1;
-
-    background-color: var(--mlazy-article-color);
-    max-width: var(--mlazy-article-max-width);
-    border: var(--ifm-color-emphasis-300) solid 1px;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-
-    @media(min-width: 930px) {
-        border-radius: 16px;
-        padding-left: 3rem;
-        padding-right: 3rem;
+    .markdown>h1 {
+        font-weight: normal;
     }
 
-    @media(max-width: 930px) {
-        padding-left: 1.5rem;
-        margin-left: -1rem;
-        padding-right: 1.5rem;
-        margin-right: -1rem;
-        border-left: 0;
-        border-right: 0;
+    .markdown>h2 {
+        border-bottom: var(--ifm-color-emphasis-300) solid 2px;
     }
-}
 
-.markdown>h1 {
-    font-weight: normal;
-}
+    .markdown>hr {
+        background-color: var(--ifm-color-emphasis-300);
+        height: 2px;
+    }
 
-.markdown>h2 {
-    border-bottom: var(--ifm-color-emphasis-300) solid 2px;
-}
+    .markdown strong {
+        background-image: linear-gradient(color-mix(in srgb, currentColor 15%, transparent),
+                color-mix(in srgb, currentColor 15%, transparent));
 
-.markdown>hr {
-    background-color: var(--ifm-color-emphasis-300);
-    height: 2px;
-}
+        background-size: 100% calc(100% - 12px);
+        background-position: left bottom 1px;
+        background-repeat: no-repeat;
+    }
 
-.markdown strong {
-    background-image: linear-gradient(color-mix(in srgb, currentColor 15%, transparent),
-            color-mix(in srgb, currentColor 15%, transparent));
+    [data-theme='dark'] .markdown strong {
+        background-image: linear-gradient(color-mix(in srgb, currentColor 25%, transparent),
+                color-mix(in srgb, currentColor 25%, transparent));
+    }
 
-    background-size: 100% calc(100% - 10px);
-    background-position: left bottom 0px;
-    background-repeat: no-repeat;
-}
+    .markdown>blockquote {
+        border-left-width: 4px;
+        color: var(--ifm-color-emphasis-700);
+    }
 
-[data-theme='dark'] .markdown strong {
-    background-image: linear-gradient(color-mix(in srgb, currentColor 25%, transparent),
-            color-mix(in srgb, currentColor 25%, transparent));
-}
-
-.markdown>blockquote {
-    border-left-width: 4px;
-    color: var(--ifm-color-emphasis-700);
+    .katex {
+        /* 默认是 121% */
+        font-size: 115%;
+    }
 }
 
 /* 美丽的选中效果 */
@@ -335,4 +342,30 @@ p {
 .with-indent hr {
     margin-left: 4em;
     margin-right: 4em;
+}
+
+/* box */
+.box {
+    background: var(--ifm-color-emphasis-100);
+    border: 1px solid var(--ifm-color-emphasis-300);
+    box-shadow: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
+    border-radius: var(--ifm-global-radius);
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: border 0.3s;
+    color: var(--ifm-font-color-base);
+
+    @media(min-width: 997px) {
+        padding: rem 1.2rem;
+    }
+}
+
+.box h3 {
+    font-size: medium;
+    margin-left: 0;
+}
+
+.box p {
+    margin-left: 1rem;
+    margin-bottom: 0;
 }

@@ -229,6 +229,10 @@ const config: Config = {
             type: 'text/css',
         },*/
     ],
+    markdown: {
+        mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
 };
 
 export default config;
