@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkm_notebook=self.webpackChunkm_notebook||[]).push([["589"],{92632(s){s.exports=JSON.parse('{"blogBasePath":"/arts","blogTitle":"\u6587\u827A","authorsListPath":"/arts/authors"}')}}]);
